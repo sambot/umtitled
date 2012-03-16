@@ -19,6 +19,22 @@
 		
 // FUNCTIONS
 
+	function prev_page() {
+		$prev_page = $_SERVER['QUERY_STRING'] + 1;
+		echo('<a href="'.$prev_page.'">'.$GLOBALS['prev_page_text'].'</a>');
+	}
+
+
+
+	function next_page() {
+		if($_SERVER['QUERY_STRING'] != 1) {
+			$next_page = $_SERVER['QUERY_STRING'] - 1;
+			echo('<a href="'.$next_page.'">'.$GLOBALS['next_page_text'].'</a>');
+		}
+	}
+
+
+
 	function main_page() {
 	
 		$count = $GLOBALS['posts_per_page'] - 1;
@@ -32,6 +48,8 @@
 			echo (Markdown($post_content));
 		
 		}
+		
+		echo('<a href="2">'.$GLOBALS['prev_page_text'].'</a>');
 	
 	}
 	
@@ -47,6 +65,7 @@
 		
 		$end = $ppp * $page_num;
 		$start = $end - $ppp;
+		$total = count($filepaths);
 		
 		for ($i=$start; $i<=$end-1; $i++) {
 		
@@ -56,12 +75,17 @@
 		
 		}
 		
-		$prev_page = $_SERVER['QUERY_STRING'] - 1;
-		echo('<a href="'.$prev_page.'">'.$GLOBALS['prev_page_text'].'</a>');
+		if ($end < $total) {
+			$prev_page = $_SERVER['QUERY_STRING'] + 1;
+			echo('<a href="'.$prev_page.'">'.$GLOBALS['prev_page_text'].'</a>');
+		}	
 		
-		$next_page = $_SERVER['QUERY_STRING'] + 1;
-		echo('<a href="'.$next_page.'">'.$GLOBALS['next_page_text'].'</a>');
-	
+		if ($_SERVER['QUERY_STRING'] == 2) {
+			echo('<a href=".">'.$GLOBALS['next_page_text'].'</a>');
+		} else {
+			$next_page = $_SERVER['QUERY_STRING'] - 1;
+			echo('<a href="'.$next_page.'">'.$GLOBALS['next_page_text'].'</a>');
+		}
 	}
 	
 	
