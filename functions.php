@@ -6,6 +6,8 @@
 	
 	$posts_dir		= 'posts';
 	$posts_per_page	= 3;
+	$next_page_text	= 'Next Page &rarr;';
+	$prev_page_text	= '&larr; Previous Page | ';
 	
 	
 	
@@ -53,9 +55,14 @@
 			echo (Markdown($post_content));
 		
 		}
+		
+		$prev_page = $_SERVER['QUERY_STRING'] - 1;
+		echo('<a href="'.$prev_page.'">'.$GLOBALS['prev_page_text'].'</a>');
+		
+		$next_page = $_SERVER['QUERY_STRING'] + 1;
+		echo('<a href="'.$next_page.'">'.$GLOBALS['next_page_text'].'</a>');
 	
 	}
-	
 	
 	
 	function single_post() {
