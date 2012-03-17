@@ -5,5 +5,6 @@
 	$next_page_text	= 'Next Page &rarr;';
 	$prev_page_text	= '&larr; Previous Page | ';
 	$comments		= 'off';
+	$site_title		= 'Markdown Blog';
 
 ?>

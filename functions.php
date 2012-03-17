@@ -1,17 +1,17 @@
 <?php
 
-	
-	
-// HELPERS
+
+
+// HELPERS //
 	
 	include_once ('config.php');
 	include_once ('markdown.php');
 	
 	
-		
+			
 // FUNCTIONS
 
-
+	// Builds out the home page
 
 	function main_page() {
 	
@@ -21,9 +21,17 @@
 		
 		for ($i=0; $i<=$count; $i++) {
 		
-			$post_content = file_get_contents($filepaths[$i]);
+			// START HERE //
+			$single_post = preg_replace('posts/[0-9\-*]_([a-z\-*]).md', 'stuff', 'posts/2012-03-16-23-07_an-awesome-post.md');
 		
-			echo (Markdown($post_content));
+			$md_content = file_get_contents($filepaths[$i]);
+		
+			$html_content = (Markdown($md_content));
+			
+			$html_content = str_replace('<h1>', '<h1><a href="'.$single_post.'">', $html_content);
+			$html_content = str_replace('</h1>', '</h1></a>', $html_content);
+			
+			echo($html_content);
 		
 		}
 		
@@ -31,8 +39,10 @@
 	
 	}
 	
+
 	
-	
+	// Builds out the paginated posts pages
+		
 	function more_posts() {
 	
 		$page_num = $_SERVER['QUERY_STRING'];
@@ -66,6 +76,9 @@
 		}
 	}
 	
+	
+	
+	// Builds out the single post page
 	
 	function single_post() {
 		

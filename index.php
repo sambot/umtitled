@@ -1,6 +1,6 @@
 <?php include_once ('functions.php'); ?><!doctype html>
 <head>
-<title></title>
+<title><?php echo $site_title; ?></title>
 </head>
 <body>
 
