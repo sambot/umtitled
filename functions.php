@@ -1,37 +1,15 @@
-<?php  
+<?php
 
-
-
-// CONFIG VARIABLES
-	
-	$posts_dir		= 'posts';
-	$posts_per_page	= 3;
-	$next_page_text	= 'Next Page &rarr;';
-	$prev_page_text	= '&larr; Previous Page | ';
-	
 	
 	
 // HELPERS
 	
+	include_once ('config.php');
 	include_once ('markdown.php');
 	
 	
 		
 // FUNCTIONS
-
-	function prev_page() {
-		$prev_page = $_SERVER['QUERY_STRING'] + 1;
-		echo('<a href="'.$prev_page.'">'.$GLOBALS['prev_page_text'].'</a>');
-	}
-
-
-
-	function next_page() {
-		if($_SERVER['QUERY_STRING'] != 1) {
-			$next_page = $_SERVER['QUERY_STRING'] - 1;
-			echo('<a href="'.$next_page.'">'.$GLOBALS['next_page_text'].'</a>');
-		}
-	}
 
 
 

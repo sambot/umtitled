@@ -1,12 +1,10 @@
-<!doctype html>
+<?php include_once ('functions.php'); ?><!doctype html>
 <head>
 <title></title>
 </head>
 <body>
 
 <?php 
-
-	include_once ('functions.php');
 	
 	if (is_numeric($_SERVER['QUERY_STRING'])) {
 		
