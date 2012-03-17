@@ -22,7 +22,7 @@
 		for ($i=0; $i<=$count; $i++) {
 		
 			// START HERE //
-			$single_post = preg_replace('posts/[0-9\-*]_([a-z\-*]).md', 'stuff', 'posts/2012-03-16-23-07_an-awesome-post.md');
+			$single_post = preg_replace('#posts/[0-9-]*_([a-z-]*)\.md#', '$1', $filepaths[$i]);
 		
 			$md_content = file_get_contents($filepaths[$i]);
 		
