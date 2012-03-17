@@ -6,6 +6,7 @@
 		$posts_per_page		= 	3							;
 		$comments			= 	'off'						;
 		$site_title			= 	'Markdown Blog'				;
+		$theme				= 	'grumblecakes'				;
 	
 	////////////////////////////////////////////////////////////////////////
 	
