@@ -1,4 +1,4 @@
-<?php include_once ('functions.php'); ?><!doctype html>
+<?php include_once ('config.php'); ?><!doctype html>
 <head>
 <title><?php echo $site_title; ?></title>
 </head>
