@@ -2,10 +2,9 @@
 
 	// BLOG VARIABLES - Go ahead and edit away!
 
-		$posts_dir			=	'posts'						;
+		$site_title			= 	'Markdown Blog'				;
 		$posts_per_page		= 	3							;
 		$comments			= 	'off'						;
-		$site_title			= 	'Markdown Blog'				;
 		$theme				= 	'grumblecakes'				;
 	
 	////////////////////////////////////////////////////////////////////////
@@ -14,6 +13,8 @@
 	
 	// ADVANCED CONFIG VARIABLES - Edit ONLY if you know what you're doing.
 
+		$use_dropbox		=	'no'						;
+		$posts_dir			=	'posts'						;
 		$next_page_text		= 	'Next Page &rarr;'			;
 		$prev_page_text		= 	'&larr; Previous Page | '	;
 

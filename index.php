@@ -1,6 +1,6 @@
 <?php 
 	include_once('config.php'); 
-	include_once('themes/'.$theme.'/head.php');
+	include_once('themes/'.$theme.'/top.php');
 	
 	if (is_numeric($_SERVER['QUERY_STRING'])) {
 		more_posts();
@@ -10,5 +10,5 @@
 		main_page();
 	}
 	
-	include_once('themes/'.$theme.'/foot.php');
+	include_once('themes/'.$theme.'/bottom.php');
 ?>
