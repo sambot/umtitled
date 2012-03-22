@@ -35,6 +35,7 @@
 	
 		include_once (		'functions/markdown.php'		);
 		include_once (		'functions/simple_html_dom.php'	);
+		include_once (		'functions/filepaths.php'		);
 		include_once (		'functions/title_post.php'		);
 		include_once (		'functions/main_page.php'		);
 		include_once (		'functions/more_posts.php'		);
