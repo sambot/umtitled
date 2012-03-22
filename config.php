@@ -1,4 +1,4 @@
-<?php 
+<?php ini_set('display_errors', '1');
 
 	// BLOG VARIABLES - Go ahead and edit away!
 
@@ -14,7 +14,7 @@
 	// DROPBOX VARIABLES - Go ahead and edit away!
 
 		$use_dropbox		=	'yes'						;
-		$dropbox_posts_dir	=	'http://dl.dropbox.com/u/1276566/umtitled/posts/';
+		$dropbox_posts_dir	=	'http://dl.dropbox.com/u/1276566/umtitled/posts';
 		$dropbox_posts_page	=	'https://www.dropbox.com/sh/isyrm6akavgy8mh/obUwTUmZf5';
 	
 	////////////////////////////////////////////////////////////////////////
@@ -34,6 +34,7 @@
 	// FUNCTIONS - Don't touch these!
 	
 		include_once (		'functions/markdown.php'		);
+		include_once (		'functions/simple_html_dom.php'	);
 		include_once (		'functions/title_post.php'		);
 		include_once (		'functions/main_page.php'		);
 		include_once (		'functions/more_posts.php'		);
