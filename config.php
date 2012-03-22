@@ -8,12 +8,21 @@
 		$theme				= 	'grumblecakes'				;
 	
 	////////////////////////////////////////////////////////////////////////
+
+	
+	
+	// DROPBOX VARIABLES - Go ahead and edit away!
+
+		$use_dropbox		=	'yes'						;
+		$dropbox_posts_dir	=	'http://dl.dropbox.com/u/1276566/umtitled/posts/';
+		$dropbox_posts_page	=	'https://www.dropbox.com/sh/isyrm6akavgy8mh/obUwTUmZf5';
+	
+	////////////////////////////////////////////////////////////////////////
 	
 	
 	
 	// ADVANCED CONFIG VARIABLES - Edit ONLY if you know what you're doing.
-
-		$use_dropbox		=	'no'						;
+	
 		$posts_dir			=	'posts'						;
 		$next_page_text		= 	'Next Page &rarr;'			;
 		$prev_page_text		= 	'&larr; Previous Page | '	;

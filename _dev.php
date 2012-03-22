@@ -1,14 +1,6 @@
-<?php 
-
-include_once('_simplehtmldom/simple_html_dom.php');
-
-$html = file_get_html('https://www.dropbox.com/sh/isyrm6akavgy8mh/obUwTUmZf5');
-
-?><!doctype html>
+<!doctype html>
 <head>
 <title></title>
-
-
 </head>
 <body>
 <div id="result"></div>
@@ -16,13 +8,16 @@ $html = file_get_html('https://www.dropbox.com/sh/isyrm6akavgy8mh/obUwTUmZf5');
 
 <?php 
 
-foreach($html->find('.filename-link') as $element) {
-	// echo $element->href . '<br>';
+	include_once('config.php');
+	include_once('functions/simple_html_dom.php');
 	
-	$link = $element->href;
-	$link = preg_replace('#.*/#', '', $link);
-	echo ('<a href="http://dl.dropbox.com/u/1276566/umtitled/posts/'.$link.'">'.$link.'</a><br />');
-}
+	$html = file_get_html($dropbox_posts_page);
+	
+	foreach($html->find('.filename-link') as $element) {
+		$md = $element->href;
+		$md = preg_replace('#.*/#', '', $md);
+		echo ('<a href="'.$dropbox_posts_dir.$md.'">'.$md.'</a><br />');
+	}
 
  ?>
 
