@@ -13,7 +13,7 @@
 	
 	// DROPBOX VARIABLES - Go ahead and edit away!
 
-		$use_dropbox		=	'yes'						;
+		$use_dropbox		=	'yes'						; // 'yes' or 'no'
 		$dropbox_posts_dir	=	'http://dl.dropbox.com/u/1276566/umtitled/posts';
 		$dropbox_posts_page	=	'https://www.dropbox.com/sh/isyrm6akavgy8mh/obUwTUmZf5';
 	
