@@ -3,15 +3,17 @@
 	// Builds out the paginated posts pages
 	
 	function more_posts() { 	
+		
+		filepaths();
+		
 		$page_num = $_SERVER['QUERY_STRING'];
 		$ppp = $GLOBALS['posts_per_page'];
-		$filepaths = glob($GLOBALS['posts_dir'].'/*.md');
 		$end = $ppp * $page_num;
 		$start = $end - $ppp;
-		$total = count($filepaths);
+		$total = count($GLOBALS['filepaths']);
 		
 		for ($i=$start; $i<=$end-1; $i++) {
-			title_post($filepaths,$i);
+			title_post($GLOBALS['filepaths'],$i);
 		}
 		
 		if ($end < $total) {
