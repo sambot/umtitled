@@ -1,5 +1,5 @@
 RewriteEngine on
 RewriteRule ^([a-z0-9\-]*)$ index.php?$1
 
-php_value auto_prepend_file cache/begin_caching.php
-php_value auto_append_file cache/end_caching.php
+# php_value auto_prepend_file cache/begin_caching.php
+# php_value auto_append_file cache/end_caching.php

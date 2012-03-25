@@ -26,6 +26,8 @@
 		$posts_dir			=	'posts'						;
 		$next_page_text		= 	'Next Page &rarr;'			;
 		$prev_page_text		= 	'&larr; Previous Page | '	;
+		$cache_url_param	= 	'cache'						;
+		$cache_url_pass		= 	'ruleseverythingaroundme'	;
 
 	////////////////////////////////////////////////////////////////////////
 
