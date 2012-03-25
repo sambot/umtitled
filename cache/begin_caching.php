@@ -2,7 +2,7 @@
 
     // Settings
     $cachedir = 'cache/caches/'; // Directory to cache files in (keep outside web root)
-    $cachetime = 60; // Seconds to cache files for
+    $cachetime = $GLOBALS['cache_lifespan']; // Seconds to cache files for
     $cacheext = 'cache'; // Extension to give cached files (usually cache, htm, txt)
 
     // Ignore List
