@@ -10,8 +10,12 @@
 				$md = preg_replace('#.*/#', '', $md);
 				$filepaths[] = $GLOBALS['dropbox_posts_dir'].'/'.$md;
 			}
+			
+			$filepaths = array_reverse($filepaths);
+			
 		} else {
 			$filepaths = glob($GLOBALS['posts_dir'].'/*.md');
+			$filepaths = array_reverse($filepaths);
 		}
 	}
 	
