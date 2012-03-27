@@ -7,11 +7,12 @@
 		filepaths();
 		remove_posts();
 		
-		// START HERE
-		
 		foreach ($GLOBALS['filepaths'] as $files) {
 			$page_link = preg_replace('#'.$GLOBALS['dropbox_posts_dir'].'/([a-z-]*)\.md#', '$1', $files);
-			echo ('<li><a href="'.$page_link.'">'.$page_link.'</a></li>');
+			$the_file = fopen($files, 'r');
+			$page_title = fgets($the_file);
+			$page_title = str_replace('# ', '', $page_title);
+			echo ('<li><a href="'.$page_link.'">'.$page_title.'</a></li>');
 		}
 	
 	}
