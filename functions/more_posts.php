@@ -5,6 +5,7 @@
 	function more_posts() { 	
 		
 		filepaths();
+		remove_pages();
 		
 		$page_num = $_SERVER['QUERY_STRING'];
 		$ppp = $GLOBALS['posts_per_page'];
