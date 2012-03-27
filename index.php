@@ -9,6 +9,8 @@
 	
 	if (is_numeric($_SERVER['QUERY_STRING'])) {
 		more_posts();
+	} elseif (ctype_alpha($_SERVER['QUERY_STRING'])) {
+		page(); //this isn't going to work unless pages don't have any - in them.
 	} elseif ($_SERVER['QUERY_STRING']) {
 		single_post();
 	} else {

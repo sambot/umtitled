@@ -44,6 +44,7 @@
 		include_once (		'functions/main_page.php'		);
 		include_once (		'functions/more_posts.php'		);
 		include_once (		'functions/single_post.php'		);
+		include_once (		'functions/page.php'		);
 
 	////////////////////////////////////////////////////////////////////////
 
