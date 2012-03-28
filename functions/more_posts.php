@@ -23,10 +23,10 @@
 		}	
 		
 		if ($_SERVER['QUERY_STRING'] == 2) {
-			echo('<a href=".">'.$GLOBALS['next_page_text'].'</a>');
+			echo(' | <a href=".">'.$GLOBALS['next_page_text'].'</a>');
 		} else {
 			$next_page = $_SERVER['QUERY_STRING'] - 1;
-			echo('<a href="'.$next_page.'">'.$GLOBALS['next_page_text'].'</a>');
+			echo(' | <a href="'.$next_page.'">'.$GLOBALS['next_page_text'].'</a>');
 		}
 	}
 

@@ -1,6 +1,6 @@
-<?php ini_set('display_errors', '1');
+<?php 
 
-	// BLOG VARIABLES - Go ahead and edit away!
+	// 	BLOG VARIABLES - Go ahead and edit away!
 
 		$site_title			= 	'Markdown Blog'				;
 		$posts_per_page		= 	3							;
@@ -11,7 +11,7 @@
 
 	
 	
-	// DROPBOX VARIABLES - Go ahead and edit away!
+	// 	DROPBOX VARIABLES - Go ahead and edit away!
 
 		$use_dropbox		=	'yes'						; // 'yes' or 'no'
 		$dropbox_posts_dir	=	'http://dl.dropbox.com/u/1276566/umtitled/posts';
@@ -21,21 +21,24 @@
 	
 	
 	
-	// ADVANCED CONFIG VARIABLES - Edit ONLY if you know what you're doing.
+	//  ADVANCED CONFIG VARIABLES - Edit ONLY if you know what you're doing.
 	
 		$posts_dir			=	'posts'						;
 		$next_page_text		= 	'Next Page &rarr;'			;
-		$prev_page_text		= 	'&larr; Previous Page | '	;
+		$prev_page_text		= 	'&larr; Previous Page'		;
 		$use_cache			=	false						;
 		$cache_lifespan		=	60							;
 		$cache_url_param	= 	'cache'						;
 		$cache_url_pass		= 	'ruleseverythingaroundme'	;
+		$dev_mode			=	true						;
 
 	////////////////////////////////////////////////////////////////////////
 
 
 
-	// FUNCTIONS - Don't touch these!
+	//  U CAN'T TOUCH THIS!
+	
+		$dev_mode ? ini_set('display_errors', '1') : '';
 	
 		include_once (		'functions/markdown.php'		);
 		include_once (		'functions/simple_html_dom.php'	);
@@ -46,8 +49,7 @@
 		include_once (		'functions/main_page.php'		);
 		include_once (		'functions/more_posts.php'		);
 		include_once (		'functions/single_post.php'		);
-		// include_once (		'functions/page.php'			);
-		include_once (		'functions/nav.php'			);
+		include_once (		'functions/nav.php'				);
 
 	////////////////////////////////////////////////////////////////////////
 

@@ -9,13 +9,16 @@
 			$path_prefix = $GLOBALS['posts_dir'];
 		}	
 	
-		$single_post = preg_replace('#'.$path_prefix.'/[0-9-]*_([0-9a-z-]*)\.md#', '$1', $filepaths[$i]);
-		$md_content = file_get_contents($filepaths[$i]);
-		$html_content = (Markdown($md_content));
-		$html_content = str_replace('<h1>', '<h1><a href="'.$single_post.'">', $html_content);
-		$html_content = str_replace('</h1>', '</a></h1>', $html_content);
+		if (array_key_exists($i, $filepaths)) {
 		
-		echo($html_content);	
+			$single_post = preg_replace('#'.$path_prefix.'/[0-9-]*_([0-9a-z-]*)\.md#', '$1', $filepaths[$i]);
+			$md_content = file_get_contents($filepaths[$i]);
+			$html_content = (Markdown($md_content));
+			$html_content = str_replace('<h1>', '<h1><a href="'.$single_post.'">', $html_content);
+			$html_content = str_replace('</h1>', '</a></h1>', $html_content);
+			
+			echo($html_content);	
+		}	
 	}
 
 ?>
