@@ -16,6 +16,12 @@
 			$loop_count++;
 		}
 		
-		$filepaths = array_values($filepaths); // resets array keys after page cleanse
+		//$filepaths = array_values($filepaths); // resets array keys after page cleanse
+		
+		usort($filepaths, function ($a, $b){
+		    return substr($b, -4) - substr($a, -4);
+		});
+		
+		$filepaths = array_reverse($filepaths);
 	}
 ?>

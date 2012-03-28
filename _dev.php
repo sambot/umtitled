@@ -7,24 +7,25 @@
 
 
 <?php 
+$donuts[0] = "Chocolate 02";
+$donuts[1] = "Jelly 16";
+$donuts[2] = "Glazed 01";
+$donuts[3] = "Frosted 12";
 
-	include_once('config.php');
-	
-	$html = file_get_html($dropbox_posts_page);
-	
-	foreach($html->find('.filename-link') as $element) {
-		$md = $element->href;
-		$md = preg_replace('#.*/#', '', $md);
-		echo ('<a href="'.$dropbox_posts_dir.$md.'">'.$md.'</a><br />');
-	}
-	
-	echo('<hr />');
-	
-	filepaths();
-	
-	$backsort = array_reverse($GLOBALS['filepaths']);
-	print_r($backsort);
+function sort_last($a, $b){
 
+    return substr($a, -2) - substr($b, -2);
+}
+
+
+print_r($donuts);
+
+usort($donuts, 'sort_last');
+
+echo '<br />';
+
+print_r($donuts);
+ 
  ?>
 
 
