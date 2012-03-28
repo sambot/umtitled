@@ -16,7 +16,9 @@
 				$filepaths[] = $GLOBALS['dropbox_posts_dir'].'/'.$md;
 			}
 			
-			$post_index = preg_grep('#.*'.$post_url_title.'\.md#', $filepaths);
+			// print_r($filepaths);exit;
+			
+			$post_index = preg_grep('#.*'.$post_url_title.'.*\.md#', $filepaths);
 			
 			$filepath = print_r($post_index, true);
 			$filepath = preg_replace('#Array\s\(\s.*http#', 'http', $filepath);
