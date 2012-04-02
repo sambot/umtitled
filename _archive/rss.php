@@ -18,7 +18,12 @@
 			$the_file = fopen($filepaths[$i], 'r');
 			
 			$post_title = fgets($the_file);
-			$post_title = str_replace('# ', '', $post_title);
+			//$post_title = str_replace('# ', '', $post_title);
+			
+			$matches = array();
+			preg_match('/<h1>(.*)</h1>.*/iU', $the_file, $matches);
+			echo('matches: ');
+			print_r($matches);exit;
 			
 			echo('filepath: '.$filepaths[$i].'<br />');
 			echo('post link: '.$post_link.'<br />');

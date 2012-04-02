@@ -49,7 +49,6 @@
 		include_once (		'functions/remove_posts.php'	);
 		include_once (		'functions/title_post.php'		);
 		include_once (		'functions/main_page.php'		);
-		include_once (		'functions/rss.php'				);
 		include_once (		'functions/more_posts.php'		);
 		include_once (		'functions/single_post.php'		);
 		include_once (		'functions/nav.php'				);
