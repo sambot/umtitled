@@ -28,7 +28,7 @@
 		$prev_page_text		= 	'&larr; Previous Page'		;
 		$publish_rss		= 	true						;
 		$items_in_feed		= 	10							;
-		$use_cache			=	true						;
+		$use_cache			=	false						;
 		$cache_lifespan		=	60							;
 		$cache_url_param	= 	'cache'						;
 		$cache_url_pass		= 	'ruleseverythingaroundme'	;
@@ -49,6 +49,7 @@
 		include_once (		'functions/remove_posts.php'	);
 		include_once (		'functions/title_post.php'		);
 		include_once (		'functions/main_page.php'		);
+		include_once (		'functions/post_date.php'		);
 		include_once (		'functions/more_posts.php'		);
 		include_once (		'functions/single_post.php'		);
 		include_once (		'functions/nav.php'				);

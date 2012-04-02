@@ -34,6 +34,10 @@
 		
 		echo (Markdown($post_content));
 		
+		post_date($filepath);
+		
+		echo ('<p>Posted on: '.$GLOBALS['post_date'].'</p>');
+		
 	}
 
 ?>

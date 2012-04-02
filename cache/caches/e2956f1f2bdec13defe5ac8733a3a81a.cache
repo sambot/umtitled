@@ -19,6 +19,8 @@
 <li>Two</li>
 <li>Three</li>
 </ul>
-
+<br />
+<b>Notice</b>:  Undefined variable: post_date in <b>/Users/sam/Dropbox/Transfer/Work/umtitled/functions/single_post.php</b> on line <b>39</b><br />
+<p>Posted on: </p>
 </body>
 </html>
