@@ -3,6 +3,7 @@
 	// 	BLOG VARIABLES - Go ahead and edit away!
 
 		$site_title			= 	'Markdown Blog'				;
+		$site_tagline		= 	'Eat it, chump'				;
 		$posts_per_page		= 	3							;
 		$comments			= 	'off'						;
 		$theme				= 	'grumblecakes'				;
