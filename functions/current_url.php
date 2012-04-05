@@ -18,9 +18,10 @@ function current_url() {
   		$current_url .= $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
  	}
  	
- 	echo 'site root: '.$site_root.'<br />';
- 	echo $current_url;
+ 	return $site_root;
+ 	return $current_url;
  	
 }
+
 
 ?>

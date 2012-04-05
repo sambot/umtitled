@@ -5,19 +5,24 @@
 		
 		filepaths();
 		remove_pages();
+		current_url();
+		
+		echo('site root: '.$site_root);
 		
 		$filepaths = $GLOBALS['filepaths'];
 			
 		$count = $GLOBALS['items_in_feed'] - 1;
 			
 		$now_date = date('D, d M Y H:i:s O');
+		
+		$current_url = str_replace('')
 			
 		echo ('<?xml version="1.0" encoding="UTF-8" ?>
 			<rss version="2.0">
 			<channel>
 		        <title>'.$site_title.'</title>
 		        <description>'.$site_tagline.'</description>
-		        <link>'.$_SERVER['SERVER_NAME'].'</link>
+		        <link>'.$site_root.'</link>
 		        <lastBuildDate>'.$now_date.'</lastBuildDate>
 		        <pubDate>'.$now_date.'</pubDate>
 		        <ttl>1400</ttl>
@@ -38,7 +43,9 @@
 			$body = ltrim($body);
 			
 			post_date($filepaths[$i]);
-			$pub_date = $GLOBALS['post_date']; // START HERE
+			$pub_date = $GLOBALS['post_date'];
+			$pub_date = DateTime::createFromFormat('F j, Y \a\t g:i a', $pub_date);
+			$pub_date = $pub_date->format('D, d M Y H:i:s O');
 			
 			// echo('filepath: '.$filepaths[$i].'<br />');
 			// echo('post link: '.$post_link.'<br />');
@@ -51,9 +58,9 @@
 				<item>
 	                <title>'.$title.'</title>
 	                <description>'.$body.'</description>
-	                <link>'.$_SERVER['SERVER_NAME'].'/'.$post_link.'</link>
-	                <guid>unique string per item</guid>
-	                <pubDate>Mon, 06 Sep 2009 16:45:00 +0000 </pubDate>
+	                <link>'.$GLOBALS['site_root'].'/'.$post_link.'</link>
+	                <guid>'.$GLOBALS['site_root'].'/'.$post_link.'</guid>
+	                <pubDate>'.$pub_date.'</pubDate>
 		        </item>
 			');
 			

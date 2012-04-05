@@ -28,6 +28,7 @@
 		$next_page_text		= 	'Next Page &rarr;'			;
 		$prev_page_text		= 	'&larr; Previous Page'		;
 		$publish_rss		= 	true						;
+		$cache_rss			= 	true						;
 		$items_in_feed		= 	10							;
 		$use_cache			=	false						;
 		$cache_lifespan		=	60							;
@@ -54,6 +55,7 @@
 		include_once (		'functions/more_posts.php'		);
 		include_once (		'functions/single_post.php'		);
 		include_once (		'functions/nav.php'				);
+		include_once (		'functions/current_url.php'		);
 
 	////////////////////////////////////////////////////////////////////////
 
