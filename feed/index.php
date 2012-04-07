@@ -1,13 +1,15 @@
 <?php  
+	
 	include_once('../config.php');
 	
-	if($publish_rss){
+	if($publish_rss){ 
 		
 		filepaths();
 		remove_pages();
-		current_url();
+		current_url(); 
 		
-		echo('site root: '.$site_root);
+		// echo('site root: '.$site_root.'<br />');
+		// echo('current url: '.$current_url.'<br />');
 		
 		$filepaths = $GLOBALS['filepaths'];
 			
@@ -15,7 +17,7 @@
 			
 		$now_date = date('D, d M Y H:i:s O');
 		
-		$current_url = str_replace('')
+		$current_url = str_replace('','','');
 			
 		echo ('<?xml version="1.0" encoding="UTF-8" ?>
 			<rss version="2.0">

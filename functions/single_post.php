@@ -34,9 +34,16 @@
 		
 		echo (Markdown($post_content));
 		
-		post_date($filepath);
 		
-		echo ('<p>Posted on: '.$GLOBALS['post_date'].'</p>');
+		$this_post_date = str_replace($GLOBALS['dropbox_posts_dir'].'/', '', $filepath);
+		
+		if (is_numeric(substr($this_post_date,0,1))) {
+		
+			post_date($filepath);
+			
+			echo ('<p>Posted on: '.$GLOBALS['post_date'].'</p>');
+			
+		}	
 		
 	}
 

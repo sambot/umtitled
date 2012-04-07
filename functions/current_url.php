@@ -1,9 +1,12 @@
 <?php  
 
 function current_url() {
+	global $site_root;
+	global $current_url;
+
 	$current_url = 'http';
 	
-	if ($_SERVER['HTTPS'] == 'on') {
+	if (!empty($_SERVER['HTTPS'])) {
 		$current_url .= 's';
 	}
  	
