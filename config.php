@@ -5,7 +5,6 @@
 		$site_title			= 	'Markdown Blog'				;
 		$site_tagline		= 	'Eat it, chump'				;
 		$posts_per_page		= 	3							;
-		$comments			= 	'off'						;
 		$theme				= 	'grumblecakes'				;
 	
 	////////////////////////////////////////////////////////////////////////
@@ -17,6 +16,15 @@
 		$use_dropbox		=	'yes'						; // 'yes' or 'no'
 		$dropbox_posts_dir	=	'http://dl.dropbox.com/u/1276566/umtitled/posts';
 		$dropbox_posts_page	=	'https://www.dropbox.com/sh/isyrm6akavgy8mh/obUwTUmZf5';
+	
+	////////////////////////////////////////////////////////////////////////
+
+	
+	
+	// 	COMMENTING VARIABLES - Go ahead and edit away!
+
+		$comments			= 	true						;
+		$disqus_shortname	= 	'umtitled'					;
 	
 	////////////////////////////////////////////////////////////////////////
 	
