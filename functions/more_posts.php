@@ -15,6 +15,10 @@
 		
 		for ($i=$start; $i<=$end-1; $i++) {
 			title_post($GLOBALS['filepaths'],$i);
+
+			$filepath = $GLOBALS['filepaths'];
+			post_date($filepath[$i]);
+			echo ('<p>Posted on: '.$GLOBALS['post_date'].'</p>');
 		}
 		
 		if ($end < $total) {
