@@ -4,7 +4,7 @@
 
 		$site_title			= 	'Markdown Blog'				;
 		$site_tagline		= 	'Eat it, chump'				;
-		$posts_per_page		= 	3							;
+		$posts_per_page		= 	5							;
 		$theme				= 	'grumblecakes'				;
 	
 	////////////////////////////////////////////////////////////////////////
