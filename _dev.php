@@ -1,16 +1,21 @@
-<?php include_once('config.php');
+<!doctype html>
+<head>
+<title></title>
 
-	//include_once('cache/begin_caching.php');
-					
-		$html = file_get_html('https://www.dropbox.com/sh/isyrm6akavgy8mh/obUwTUmZf5');
-		
-		foreach($html->find('.filename-link') as $element) {
-			$md = $element->href;
-			$md = preg_replace('#.*/#', '', $md);
-			// $filepaths[] = $GLOBALS['dropbox_posts_dir'].'/'.$md;
-			echo ('<a href="'.$GLOBALS['dropbox_posts_dir'].'/'.$md.'" class="filename-link">'.$md.'</a><br />');		
-		}
-	
-	//include_once('cache/end_caching.php');
+</head>
+<body>
 
-?>
+<input type="text" id="q" onkeydown="if (event.keyCode == 13) { googlesearch(); }">
+<input type="button" value="go" onclick="googlesearch();">
+
+<script type="text/javascript">
+    function googlesearch() {
+    	var searchterm = document.getElementById('q').value;
+    	var searchurl = 'https://www.google.com/search?q=site:sambot.com+' + searchterm;
+    	window.location = searchurl;
+    }
+</script>
+
+
+</body>
+</html>
