@@ -37,15 +37,19 @@
 		
 		$this_post_date = str_replace($GLOBALS['dropbox_posts_dir'].'/', '', $filepath);
 		
+		$is_post = false;
+		
 		if (is_numeric(substr($this_post_date,0,1))) {
 		
 			post_date($filepath);
 			
 			echo ('<p>Posted on: '.$GLOBALS['post_date'].'</p>');
 			
+			$is_post = true;
+			
 		}	
 		
-		if ($GLOBALS['comments']) {
+		if ($GLOBALS['comments'] && $is_post) {
 			?>
 			
 				<div id="disqus_thread"></div>
