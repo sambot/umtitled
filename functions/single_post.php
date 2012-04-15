@@ -8,7 +8,8 @@
 	
 		if ($GLOBALS['use_dropbox'] == 'yes') {
 			
-			$html = file_get_html($GLOBALS['dropbox_posts_page']);
+			//$html = file_get_html($GLOBALS['dropbox_posts_page']);
+			$html = file_get_html('cache/caches/scraped.html');
 			
 			foreach($html->find('.filename-link') as $element) {
 				$md = $element->href;

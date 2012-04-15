@@ -19,6 +19,10 @@
 		    }
 		    @closedir($handle);
 		}
+		
+		echo('<hr />Rebuild: <br />&nbsp;<br />');
+		
+		include_once('scraped.php');
     
 	} else { 
 		echo 'Nice try, chump.';

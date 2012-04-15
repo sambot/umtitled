@@ -1,0 +1,37 @@
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	line-height: 24px;
+	background: url(../images/bg.jpg) fixed;
+}
+#wrapper {
+	width: 600px;
+	margin: auto;
+}
+article p {
+	text-align: justify;
+	margin-bottom: 12px; 
+}
+blockquote {
+	margin: 0 30px 12px 26px;
+	padding-left: 20px;
+	border-left: 4px solid #ccc;
+	font-style: italic;
+	color: #666;
+}
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+}
+header h1 {
+	font-family: 'Averia Serif Libre', cursive;
+	text-align: center;
+	font-size: 78px;
+	padding: 60px 0;
+	border-top: 12px solid;
+	font-variant: small-caps;
+}
+article h1 {
+	margin-bottom: 12px; 
+}
