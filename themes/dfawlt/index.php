@@ -110,7 +110,7 @@
 	</div>
 	
 	<footer>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Pellentesque tincidunt porttitor magna, quis molestie augue sagittis quis.</p>
+		<p>Lorem ipsum dolor sit amet, <a href="">consectetur adipiscing</a> elit.<br />Pellentesque tincidunt porttitor magna, quis molestie augue sagittis quis.</p>
 	</footer>
 </body>
 </html>

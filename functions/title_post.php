@@ -17,7 +17,7 @@
 			$html_content = str_replace('<h1>', '<h1><a href="'.$single_post.'">', $html_content);
 			$html_content = str_replace('</h1>', '</a></h1>', $html_content);
 			
-			echo($html_content);	
+			echo('<article>'.$html_content);	
 		}	
 	}
 

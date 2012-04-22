@@ -17,20 +17,26 @@
 			title_post($GLOBALS['filepaths'],$i);
 
 			$filepath = $GLOBALS['filepaths'];
-			post_date($filepath[$i]);
-			echo ('<p>Posted on: '.$GLOBALS['post_date'].'</p>');
+			
+			if(isset($filepath[$i])) {
+				post_date($filepath[$i]);
+				echo ('<footer><p>Posted on: '.$GLOBALS['post_date'].'</p></footer></article>');
+			}
 		}
+		
+		
+		echo('<nav id="older_newer"><ul>');
 		
 		if ($end < $total) {
 			$prev_page = $_SERVER['QUERY_STRING'] + 1;
-			echo('<a href="'.$prev_page.'">'.$GLOBALS['prev_page_text'].'</a>');
+			echo('<li><a href="'.$prev_page.'"><span>&laquo;</span> Older</a></li>');
 		}	
 		
 		if ($_SERVER['QUERY_STRING'] == 2) {
-			echo(' | <a href=".">'.$GLOBALS['next_page_text'].'</a>');
+			echo('<li><a href=".">Newer <span>&raquo;</span></a></li>');
 		} else {
 			$next_page = $_SERVER['QUERY_STRING'] - 1;
-			echo(' | <a href="'.$next_page.'">'.$GLOBALS['next_page_text'].'</a>');
+			echo('<li><a href="'.$next_page.'">Newer <span>&raquo;</span></a></li>');
 		}
 	}
 

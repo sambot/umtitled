@@ -25,13 +25,14 @@ a:hover {
 article p, article ul, article ol, article li {
 	margin-bottom: 12px; 
 }
+article ul, article ol {
+	margin-left: 36px;
+}
 article ul {
 	list-style: square;
-	margin-left: 36px;
 }
 article ol {
 	list-style: decimal;
-	margin-left: 36px;
 }
 article > p > a {
 	border-bottom: 1px dotted #0f2b6d;
@@ -158,4 +159,12 @@ footer {
 footer p {
 	width: 600px;
 	margin: auto;
+}
+footer a {
+	color: #aaa !important;
+	border-bottom: 1px dotted #aaa;
+}
+footer a:hover {
+	color: #fff;
+	border-bottom: 2px solid #fff;
 }
