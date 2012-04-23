@@ -22,7 +22,7 @@ a:hover {
 	width: 600px;
 	margin: auto;
 }
-article p, article ul, article ol, article li {
+article p, article ul, article ol {
 	margin-bottom: 12px; 
 }
 article ul, article ol {
@@ -127,6 +127,7 @@ nav#older_newer ul {
 }
 nav#older_newer li {
 	float: right;
+	height: 73px;
 }
 nav#older_newer li:first-child {
 	float: left;

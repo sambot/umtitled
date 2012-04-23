@@ -5,7 +5,7 @@
 		$site_title			= 	'Markdown Blog'				;
 		$site_tagline		= 	'Eat it, chump'				;
 		$posts_per_page		= 	5							;
-		$theme				= 	'grumblecakes'				;
+		$theme				= 	'dfawlt'					;
 	
 	////////////////////////////////////////////////////////////////////////
 
@@ -38,7 +38,7 @@
 		$publish_rss		= 	true						;
 		$cache_rss			= 	true						;
 		$items_in_feed		= 	10							;
-		$use_cache			=	true						;
+		$use_cache			=	false						;
 		$cache_lifespan		=	60							;
 		$cache_url_param	= 	'cache'						;
 		$cache_url_pass		= 	'ruleseverythingaroundme'	;

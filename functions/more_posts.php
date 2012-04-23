@@ -36,7 +36,7 @@
 			echo('<li><a href=".">Newer <span>&raquo;</span></a></li>');
 		} else {
 			$next_page = $_SERVER['QUERY_STRING'] - 1;
-			echo('<li><a href="'.$next_page.'">Newer <span>&raquo;</span></a></li>');
+			echo('<li></li><li><a href="'.$next_page.'">Newer <span>&raquo;</span></a></li>');
 		}
 	}
 

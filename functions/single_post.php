@@ -33,6 +33,7 @@
 			$post_content = file_get_contents($filepath[0]);
 		}
 		
+		echo ('<article>');
 		echo (Markdown($post_content));
 		
 		
@@ -44,11 +45,13 @@
 		
 			post_date($filepath);
 			
-			echo ('<p>Posted on: '.$GLOBALS['post_date'].'</p>');
+			echo ('<footer><p>Posted on: '.$GLOBALS['post_date'].'</p></footer>');
 			
 			$is_post = true;
 			
 		}	
+		
+		echo ('</article>');
 		
 		if ($GLOBALS['comments'] && $is_post) {
 			?>

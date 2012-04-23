@@ -1,4 +1,4 @@
-<!doctype html>
+<?php include_once('theme_config.php'); ?><!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -26,15 +26,3 @@
 		
 		
 			
-		<nav id="older_newer">
-			<ul>
-				<li><a href="2"><span>&laquo;</span> Older</a></li>
-			</ul>
-		</nav>
-	</div>
-	
-	<footer>
-		<p>Lorem ipsum dolor sit amet, <a href="">consectetur adipiscing</a> elit.<br />Pellentesque tincidunt porttitor magna, quis molestie augue sagittis quis.</p>
-	</footer>
-</body>
-</html>
