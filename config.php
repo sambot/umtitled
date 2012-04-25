@@ -2,8 +2,8 @@
 
 	// 	BLOG VARIABLES - Go ahead and edit away!
 
-		$site_title			= 	'Markdown Blog'				;
-		$site_tagline		= 	'Eat it, chump'				;
+		$site_title			= 	'Molten Brew'				;
+		$site_tagline		= 	'Feed the caffeine monster within';
 		$posts_per_page		= 	5							;
 		$theme				= 	'dfawlt'					;
 	

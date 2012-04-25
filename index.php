@@ -1,6 +1,12 @@
 <?php 
 	include_once('config.php'); 
 	
+	if (!file_exists('cache/caches/site_root.html')) {
+		ob_start();
+			include_once('site_root.php');
+		ob_end_clean();
+	}
+	
 	if ($GLOBALS['use_cache'] == true) {
 		include_once('cache/begin_caching.php');
 	} 
