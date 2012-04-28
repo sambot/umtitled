@@ -6,8 +6,9 @@
 			//$html = file_get_html($GLOBALS['dropbox_posts_page']);
 			
 			current_url();
-			
-			$html = file_get_html($GLOBALS['site_root'].'/cache/caches/scraped.html');
+			$site_root = get_site_root();
+						
+			$html = file_get_html($site_root.'cache/caches/scraped.html');
 
 			foreach($html->find('.filename-link') as $element) {
 				$md = $element->href;

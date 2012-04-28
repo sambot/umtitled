@@ -1,7 +1,7 @@
 <?php  
 
 function current_url() {
-	global $site_root;
+	//global $site_root;
 	global $current_url;
 
 	$current_url = 'http';
@@ -11,17 +11,17 @@ function current_url() {
 	}
  	
  	$current_url .= '://';
- 	$site_root = $current_url;
+ 	//$site_root = $current_url;
  	
  	if ($_SERVER["SERVER_PORT"] != '80') {
-	 	$site_root .= $_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'];
+	 	//$site_root .= $_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'];
   		$current_url .= $_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'].$_SERVER['REQUEST_URI'];
 	} else {
-	 	$site_root .= $_SERVER['SERVER_NAME'];
+	 	//$site_root .= $_SERVER['SERVER_NAME'];
   		$current_url .= $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
  	}
  	
- 	return $site_root;
+ 	//return $site_root;
  	return $current_url;
  	
 }

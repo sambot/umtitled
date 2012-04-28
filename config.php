@@ -64,6 +64,7 @@
 		include_once (		'functions/single_post.php'		);
 		include_once (		'functions/nav.php'				);
 		include_once (		'functions/current_url.php'		);
+		include_once (		'functions/get_site_root.php'	);
 
 	////////////////////////////////////////////////////////////////////////
 
