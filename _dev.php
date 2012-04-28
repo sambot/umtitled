@@ -1,6 +1,6 @@
 <?php 
 	include_once('config.php'); 
-	current_url();
+	$site_root = get_site_root();
 ?><!doctype html>
 <head>
 <title></title>
@@ -14,7 +14,7 @@
 <script type="text/javascript">
     function googlesearch() {
     	var searchterm = document.getElementById('q').value;
-    	var searchurl = 'https://www.google.com/search?q=site:<?php echo $GLOBALS['site_root']; ?>+' + searchterm;
+    	var searchurl = 'https://www.google.com/search?q=site:<?php echo $site_root; ?>+' + searchterm;
     	window.location = searchurl;
     	// alert(searchurl);
     }

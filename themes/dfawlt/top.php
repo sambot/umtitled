@@ -17,6 +17,7 @@
 			<nav>
 				<ul>
 					<?php nav(); ?>
+					<li><a href="#">Search</a></li>
 				</ul>
 			</nav>
 			<hgroup>
