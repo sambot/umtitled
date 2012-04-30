@@ -111,7 +111,6 @@ article img, article > a > img {
 	background: #eee;
 	border: 1px solid #ccc;
 	padding: 6px;
-	margin: 0 0 8px 0;
 }
 article > a > img:hover {
 	border: 1px solid #0f2b6d;

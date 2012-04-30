@@ -34,7 +34,16 @@
 		}
 		
 		echo ('<article>');
-		echo (Markdown($post_content));
+		
+		$post_content = Markdown($post_content);
+		
+		// does the image thingy
+		
+		
+		$post_images = str_replace('posts', 'post_images', $GLOBALS['dropbox_posts_dir']);
+		$post_content = str_replace('<img src="', '<img src="'.$post_images.'/', $post_content);
+		
+		echo $post_content;
 		
 		
 		$this_post_date = str_replace($GLOBALS['dropbox_posts_dir'].'/', '', $filepath);

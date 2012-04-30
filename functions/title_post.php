@@ -17,6 +17,10 @@
 			$html_content = str_replace('<h1>', '<h1><a href="'.$single_post.'">', $html_content);
 			$html_content = str_replace('</h1>', '</a></h1>', $html_content);
 			
+			// does the image thingy
+			$post_images = str_replace('posts', 'post_images', $GLOBALS['dropbox_posts_dir']);
+			$html_content = str_replace('<img src="', '<img src="'.$post_images.'/', $html_content);
+			
 			echo('<article>'.$html_content);	
 		}	
 	}
