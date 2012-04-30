@@ -60,6 +60,10 @@
 			
 		}	
 		
+		if ($is_post == false) {
+			echo ('<footer></footer>');
+		}
+		
 		echo ('</article>');
 		
 		if ($GLOBALS['comments'] && $is_post) {

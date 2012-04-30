@@ -23,7 +23,7 @@
 	
 	// 	COMMENTING VARIABLES - Go ahead and edit away!
 
-		$comments			= 	true						;
+		$comments			= 	false						;
 		$disqus_shortname	= 	'umtitled'					;
 	
 	////////////////////////////////////////////////////////////////////////
