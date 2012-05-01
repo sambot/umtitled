@@ -37,33 +37,9 @@
 		
 		$post_content = Markdown($post_content);
 		
-		// does the image thingy /////////////////////////////////////
-		$post_images = str_replace('posts', 'post_images', $GLOBALS['dropbox_posts_dir']);
+		images($post_content);
 		
-		$DOM = new DOMDocument;
-		$DOM->loadHTML($post_content);
-		
-		$imgs = $DOM->getElementsByTagName('img');
-		foreach($imgs as $img){
-		    $src = $img->getAttribute('src');
-		    if(strpos($src, 'http') !== 0){
-		        $img->setAttribute('src', $post_images.'/'.$src);
-		    }
-		}
-		
-		$html = $DOM->saveHTML();
-		
-		$html = str_replace('<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>', '', $html);
-		
-		$html = str_replace('</body></html>', '', $html);
-		
-		
-		
-		
-		
-		
-		echo $html;
+		echo $GLOBALS['html'];
 		
 		
 		$this_post_date = str_replace($GLOBALS['dropbox_posts_dir'].'/', '', $filepath);
