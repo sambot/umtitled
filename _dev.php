@@ -1,25 +1,23 @@
-<?php 
-	include_once('config.php'); 
-	$site_root = get_site_root();
-?><!doctype html>
-<head>
-<title></title>
+<?php  
 
-</head>
-<body>
+$DOM = new DOMDocument;
+$DOM->loadHTML($html);
 
-<input type="text" id="q" onkeydown="if (event.keyCode == 13) { googlesearch(); }">
-<input type="button" value="go" onclick="googlesearch();">
-
-<script type="text/javascript">
-    function googlesearch() {
-    	var searchterm = document.getElementById('q').value;
-    	var searchurl = 'https://www.google.com/search?q=site:<?php echo $site_root; ?>+' + searchterm;
-    	window.location = searchurl;
-    	// alert(searchurl);
+$imgs = $DOM->getElementsByTagName('img');
+foreach($imgs as $img){
+    $src = $img->getAttribute('src');
+    if(strpos($src, 'http') !== 0){
+        $img->setAttribute('src', "http://sitename.com/path/$src");
     }
-</script>
+}
 
+$html = $DOM->saveHTML();
 
-</body>
-</html>
+$html = str_replace('<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>', '', $html);
+
+$html = str_replace('</body></html>', '', $html);
+
+echo $html;
+
+?>
