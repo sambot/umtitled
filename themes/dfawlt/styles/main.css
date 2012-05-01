@@ -107,13 +107,16 @@ article footer {
 	border: none;
 	padding: 0;
 }
-article img, article > a > img {
+article p img, article > p > a > img {
 	background: #eee;
 	border: 1px solid #ccc;
 	padding: 6px;
 }
-article > a > img:hover {
+article > p > a > img:hover {
 	border: 1px solid #0f2b6d;
+}
+article a.img_link, article a.img_link:hover {
+	border: none;
 }
 nav#older_newer {
 	clear: both;

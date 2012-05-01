@@ -23,6 +23,9 @@
 <html><body>', '', $html);
 		
 		$html = str_replace('</body></html>', '', $html);
+		
+		// this is a really BAD hack
+		$html = str_replace('"><img src="', '" class="img_link"><img src="', $html);
 	
 	}
 
