@@ -161,7 +161,7 @@ footer {
 }
 footer p {
 	width: 600px;
-	margin: auto;
+	margin: 0 auto 16px auto;
 }
 footer a {
 	color: #aaa !important;
@@ -171,3 +171,54 @@ footer a:hover {
 	color: #fff;
 	border-bottom: 2px solid #fff;
 }
+footer #credit {
+	width: 600px;
+	margin: 40px auto 0 auto;
+}
+footer #credit p {
+	width: 400px;
+	float: right;
+	text-align: right;
+}
+footer #credit #search {
+	float: left;
+}
+footer #credit #search input {
+	float: left;
+	border: none;
+	width: 150px;
+	border-bottom: 1px dotted #aaa;
+	background: #000;
+	color: #aaa;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 3px 0 0 0;
+	outline: none;
+}
+footer #credit #search input:focus {
+	background: #333;
+	padding: 3px 3px 0 3px;
+	width: 144px;
+}
+footer #credit #search button {
+	margin: 1px 0 0 0;
+	float: left;
+	border: none;
+	background: #000;
+	color: #aaa;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 3px 0 0 6px;
+}
+footer #credit #search button:hover {
+	cursor: pointer;
+	border-bottom: 2px solid #fff;
+}
+
+
+
+
+

@@ -50,7 +50,7 @@
 		
 			post_date($filepath);
 			
-			echo ('<footer><p>Posted on: '.$GLOBALS['post_date'].'</p></footer>');
+			echo ('<footer><p>Posted on '.$GLOBALS['post_date'].'</p></footer>');
 			
 			$is_post = true;
 			

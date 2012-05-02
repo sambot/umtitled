@@ -20,7 +20,7 @@
 			
 			if(isset($filepath[$i])) {
 				post_date($filepath[$i]);
-				echo ('<footer><p>Posted on: '.$GLOBALS['post_date'].'</p></footer></article>');
+				echo ('<footer><p>Posted on '.$GLOBALS['post_date'].'</p></footer></article>');
 			}
 		}
 		

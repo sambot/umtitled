@@ -14,7 +14,7 @@
 
 			$filepath = $GLOBALS['filepaths'];
 			post_date($filepath[$i]);
-			echo ('<footer><p>Posted on: '.$GLOBALS['post_date'].'</p></footer></article>');
+			echo ('<footer><p>Posted on '.$GLOBALS['post_date'].'</p></footer></article>');
 		}
 		
 		echo('<nav id="older_newer"><ul><li><a href="2"><span>&laquo;</span> Older</a></li></ul></nav>');
