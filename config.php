@@ -21,10 +21,11 @@
 
 	
 	
-	// 	COMMENTING VARIABLES - Go ahead and edit away!
+	// 	ENHANCEMENT VARIABLES - Go ahead and edit away!
 
 		$comments			= 	false						;
 		$disqus_shortname	= 	'umtitled'					;
+		$ggl_analytics_id	= 	'UA-21364400-2'				;
 	
 	////////////////////////////////////////////////////////////////////////
 	
