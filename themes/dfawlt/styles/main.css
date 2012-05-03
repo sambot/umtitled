@@ -57,6 +57,7 @@ hgroup {
 	clear: both;
 }
 header h1 {
+	margin: 0 0 0 -3px;
 	font-size: 56px;
 	padding: 60px 0;
 	text-transform: uppercase;
@@ -71,14 +72,13 @@ header h2 {
 	clear: both;
 }
 nav ul {
-	float: right;
 	font-weight: 700;
 	font-size: 14px;
-	height: 40px;
+	height: 42px;
 }
 nav li {
 	float: left;
-	padding: 0 0 0 14px;
+	padding: 0 14px 0 0;
 }
 nav li a {
 	padding: 12px 0 0 0;
@@ -87,6 +87,31 @@ nav li a {
 nav li a:hover {
 	border-bottom: 6px solid #0f2b6d;
 	color: #0f2b6d;
+}
+nav li#search {
+	float: right;
+	padding-right: 0;
+}
+nav li#search input {
+	background: none;
+	border: none;
+	border-bottom: 1px dotted #0f2b6d;
+	outline: none;
+	width: 150px;
+	float: left;
+	margin: 14px 12px 0 0;
+	font-family:  'Lato', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #0f2b6d;
+	padding: 1px 0 2px 0;
+}
+nav li#search input:focus {
+	border-bottom: 6px solid #0f2b6d;
+	padding-bottom: 6px;
+}
+nav li#search a {
+	float: right;
 }
 article h1 {
 	font-weight: 300;
@@ -171,51 +196,20 @@ footer a:hover {
 	color: #fff;
 	border-bottom: 2px solid #fff;
 }
-footer #credit {
+footer #credits {
 	width: 600px;
 	margin: 40px auto 0 auto;
-}
-footer #credit p {
-	width: 400px;
-	float: right;
-	text-align: right;
-}
-footer #credit #search {
-	float: left;
-}
-footer #credit #search input {
-	float: left;
-	border: none;
-	width: 150px;
-	border-bottom: 1px dotted #aaa;
-	background: #000;
-	color: #aaa;
-	font-family: 'Lato', sans-serif;
+	text-transform: none;
 	font-size: 12px;
-	text-transform: uppercase;
-	padding: 3px 0 0 0;
-	outline: none;
 }
-footer #credit #search input:focus {
-	background: #333;
-	padding: 3px 3px 0 3px;
-	width: 144px;
-}
-footer #credit #search button {
-	margin: 1px 0 0 0;
+footer #credits #copyright {
 	float: left;
-	border: none;
-	background: #000;
-	color: #aaa;
-	font-family: 'Lato', sans-serif;
-	font-size: 14px;
-	text-transform: uppercase;
-	padding: 0;
-	margin: 3px 0 0 6px;
+	width: 300px;
 }
-footer #credit #search button:hover {
-	cursor: pointer;
-	border-bottom: 2px solid #fff;
+footer #credits #um_link {
+	text-align: right;
+	float: right;
+	width: 300px;
 }
 
 

@@ -20,6 +20,8 @@
 		}
 		
 		$filepaths = array_reverse($filepaths);
+		
+		$filepaths = array_unique($filepaths);
 	}
 	
 ?>
