@@ -19,8 +19,19 @@
 </a></li><li><a href="contact">Contact
 </a></li><li><a href="cheese">Cheese
 </a></li><li><a href="krunk">Krunk
-</a></li>				</ul>
+</a></li>					<li id="search">
+						<input placeholder="Search" type="text" id="q" onkeydown="if (event.keyCode == 13) { googlesearch(); }">
+						<a href="#!" onclick="googlesearch();">Go</a>
+					</li>
+				</ul>
 			</nav>
+			<script type="text/javascript">
+			    function googlesearch() {
+			    	var searchterm = document.getElementById('q').value;
+			    	var searchurl = 'https://www.google.com/search?q=site:http://localhost:8888/+' + searchterm;
+			    	window.location = searchurl;
+			    }
+			</script>
 			<hgroup>
 				<h1><a href="http://localhost:8888/">Molten Brew</a></h1>
 			</hgroup>
@@ -74,22 +85,10 @@
 	<footer>
 		<p>Hey hey mama said the <a href="">way you move</a>, gonna make you sweat, gonna make you groove</p>
 		
-		<div id="credit">
-			
-			<div id="search">
-				<input placeholder="Search" type="text" id="q" onkeydown="if (event.keyCode == 13) { googlesearch(); }">
-				<button onclick="googlesearch();">Go</button>
-				
-				<script type="text/javascript">
-				    function googlesearch() {
-				    	var searchterm = document.getElementById('q').value;
-				    	var searchurl = 'https://www.google.com/search?q=site:http://localhost:8888/+' + searchterm;
-				    	window.location = searchurl;
-				    }
-				</script>
-			</div>
-			
-			<p>&copy; 2012 Molten Brew | Powered by <a href="#">Umtitled</a></p>
+		<div id="credits">
+		
+			<p id="copyright">&copy; 2012 Molten Brew</p>
+			<p id="um_link">Powered by <a href="#">Umtitled</a></p>
 			
 		</div>
 	</footer>
