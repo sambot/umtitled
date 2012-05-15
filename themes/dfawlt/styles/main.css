@@ -22,8 +22,12 @@ a:hover {
 	width: 600px;
 	margin: auto;
 }
-article p, article ul, article ol {
-	margin-bottom: 12px; 
+article p, article ul, article ol, pre {
+	margin-bottom: 14px;
+	line-height: 26px;
+}
+article blockquote p {
+	line-height: 22px;
 }
 article ul, article ol {
 	margin-left: 36px;
@@ -41,12 +45,23 @@ article p a:hover {
 	border-bottom: 2px solid;
 	color: #0f2b6d;
 }
+article h2 {
+	margin: 24px 0 8px 0;
+}
 blockquote {
 	margin: 0 60px 12px 20px;
 	padding: 0 0 0 16px;
 	font-size: 14px;
 	line-height: 22px;
 	border-left: 4px solid #ccc;
+}
+pre, code {
+	font-family: "Courier New", Courier, Monaco, monospace;
+	font-size: 14px;
+}
+pre {
+	line-height: 18px;
+	margin-left: 20px;
 }
 h1, h2, nav {
 	font-family: 'Lato', sans-serif;
@@ -115,8 +130,9 @@ nav li#search a {
 }
 article h1 {
 	font-weight: 300;
-	margin-bottom: 18px; 
+	margin-bottom: 18px;
 	font-size: 24px;
+	line-height: 28px;
 }
 article h1 a:hover {
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);

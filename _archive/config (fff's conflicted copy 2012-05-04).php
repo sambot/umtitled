@@ -21,11 +21,10 @@
 
 	
 	
-	// 	ENHANCEMENT VARIABLES - Go ahead and edit away!
+	// 	COMMENTING VARIABLES - Go ahead and edit away!
 
 		$comments			= 	false						;
 		$disqus_shortname	= 	'umtitled'					;
-		$ggl_analytics_id	= 	'UA-21364400-2'				;
 	
 	////////////////////////////////////////////////////////////////////////
 	
@@ -39,7 +38,7 @@
 		$publish_rss		= 	true						;
 		$cache_rss			= 	true						;
 		$items_in_feed		= 	10							;
-		$use_cache			=	false						;
+		$use_cache			=	true						;
 		$cache_lifespan		=	60							;
 		$cache_url_param	= 	'cache'						;
 		$cache_url_pass		= 	'ruleseverythingaroundme'	;
