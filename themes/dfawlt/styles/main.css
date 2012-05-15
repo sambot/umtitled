@@ -25,6 +25,7 @@ a:hover {
 article p, article ul, article ol, pre {
 	margin-bottom: 14px;
 	line-height: 26px;
+	color: #222;
 }
 article blockquote p {
 	line-height: 22px;
@@ -226,6 +227,9 @@ footer #credits #um_link {
 	text-align: right;
 	float: right;
 	width: 300px;
+}
+footer .no_wrap {
+	white-space: nowrap;
 }
 
 

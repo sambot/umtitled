@@ -1,4 +1,4 @@
-<!doctype html><?php include_once('theme_config.php'); $site_root = get_site_root(); ?>
+<!doctype html><?php $site_root = get_site_root(); include_once('theme_config.php'); ?>
 
 <html lang="en">
 <head>
