@@ -18,9 +18,20 @@
 		
 		//$filepaths = array_values($filepaths); // resets array keys after page cleanse
 		
-		usort($filepaths, function ($a, $b){
-		    return substr($b, -4) - substr($a, -4);
-		});
+		// REMOVED FOR PHP 5.2 COMPATIBILITY
+		// usort($filepaths, function ($a, $b){
+		//     return substr($b, -4) - substr($a, -4);
+		// });
+
+
+		// ADDED FOR PHP 5.2 COMPATIBILITY
+		function cmp($a, $b) {
+			return substr($b, -4) - substr($a, -4);
+		}
+		usort($filepaths, 'cmp');
+
+
+		
 		
 		$filepaths = array_reverse($filepaths);
 	}
