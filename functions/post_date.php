@@ -18,10 +18,14 @@
 
 		$date_string = substr($post_date, 0, 10);
 
-		$time_string = substr($post_date, 12);
+		$time_string = substr($post_date, 11);
 		$time_string = str_replace('-', ':', $time_string);
 
 		$post_date = $date_string.' '.$time_string.':00';
+		
+		// FOR RSS FEED
+		global $feed_post_date;
+		$feed_post_date = $post_date;
 
 		$post_date = strtotime($post_date);
 

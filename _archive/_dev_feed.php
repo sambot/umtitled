@@ -4,26 +4,14 @@
 	
 	if($publish_rss){ 
 		
-
-		function get_feed_site_root() {
-			ob_start();
-		    include_once('../cache/caches/site_root.html');	
-		    return ob_get_clean();
-		}
-		
-		global $site_root;
-		global $feed;
-		$feed = true;
-		$site_root = get_feed_site_root();
-		
 		filepaths();
 		remove_pages();
 		current_url(); 
-
+		$site_root = get_site_root();
 		
-		// echo('site root: '.$site_root.'<br />');
-		// echo('current url: '.$current_url.'<br />');
-		// exit;
+		echo('site root: '.$site_root.'<br />');
+		echo('current url: '.$current_url.'<br />');
+		exit();
 		
 		$filepaths = $GLOBALS['filepaths'];
 			
@@ -59,21 +47,9 @@
 			$body = ltrim($body);
 			
 			post_date($filepaths[$i]);
-			$pub_date = $GLOBALS['feed_post_date'];
-			
-			
-			// FIX THIS!!!
-				// $pub_date = DateTime::createFromFormat('F j, Y \a\t g:i a', $pub_date);
-				// $pub_date = $pub_date->format('D, d M Y H:i:s O');
-			// END FIX
-			
-			$pub_date = strtotime($pub_date);
-	
-			// NEEDS TO BE Sat, 07 Sep 2002 00:00:01 GMT
-			$pub_date = strftime('%a, %d %b %Y %H:%M:00', $pub_date);
-			
-			
-
+			$pub_date = $GLOBALS['post_date'];
+			$pub_date = DateTime::createFromFormat('F j, Y \a\t g:i a', $pub_date);
+			$pub_date = $pub_date->format('D, d M Y H:i:s O');
 			
 			// echo('filepath: '.$filepaths[$i].'<br />');
 			// echo('post link: '.$post_link.'<br />');
@@ -86,8 +62,8 @@
 				<item>
 	                <title>'.$title.'</title>
 	                <description>'.$body.'</description>
-	                <link>'.$GLOBALS['site_root'].$post_link.'</link>
-	                <guid>'.$GLOBALS['site_root'].$post_link.'</guid>
+	                <link>'.$GLOBALS['site_root'].'/'.$post_link.'</link>
+	                <guid>'.$GLOBALS['site_root'].'/'.$post_link.'</guid>
 	                <pubDate>'.$pub_date.'</pubDate>
 		        </item>
 			');

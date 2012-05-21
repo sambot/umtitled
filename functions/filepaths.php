@@ -6,7 +6,12 @@
 			//$html = file_get_html($GLOBALS['dropbox_posts_page']);
 			
 			current_url();
-			$site_root = get_site_root();
+			
+			if (isset($GLOBALS['site_root'])) {
+				$site_root = $GLOBALS['site_root'];
+			} else {
+				$site_root = get_site_root();
+			}
 						
 			$html = file_get_html($site_root.'cache/caches/scraped.html');
 
