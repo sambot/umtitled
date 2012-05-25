@@ -1,6 +1,9 @@
 <?php
 
 	include_once('config.php');
+
+	$site_root = get_site_root();
+	echo('<p><a href="'.$site_root.'">Take me home &rarr;</a></p>');
 	
 	$cache_url_param = $GLOBALS['cache_url_param'];
 	$cache_url_pass = $GLOBALS['cache_url_pass'];
