@@ -100,7 +100,7 @@ nav li a {
 	padding: 12px 0 0 0;
 	float: left;
 }
-nav li a:hover {
+nav li a:hover, nav li a.active_nav {
 	border-bottom: 6px solid #0f2b6d;
 	color: #0f2b6d;
 }
