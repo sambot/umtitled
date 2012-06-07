@@ -25,7 +25,7 @@
 
 		$comments			= 	false						;
 		$disqus_shortname	= 	'umtitled'					;
-		$ggl_analytics_id	= 	'UA-21364400-2'				;
+		$ggl_analytics_id	= 	'UA-24892776-1'				;
 	
 	////////////////////////////////////////////////////////////////////////
 	

@@ -2,7 +2,7 @@ body {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 16px;
 	line-height: 24px;
-	background: url(../images/bg.jpg) fixed;
+	background: url(../images/bg.gif) fixed #efefef;
 	border-top: 6px solid #0f2b6d;
 }
 strong, b {
@@ -46,8 +46,24 @@ article p a:hover {
 	border-bottom: 2px solid;
 	color: #0f2b6d;
 }
+article sup {
+	font-size: 12px;
+	vertical-align: super;
+	line-height: 0;
+}
 article h2 {
 	margin: 24px 0 8px 0;
+}
+article hr {
+	color: #ccc;
+	background-color: #ccc;
+	height: 1px;
+	border-width: 0;
+	margin: 20px 0;
+}
+article hr + ol {
+	font-size: 14px;
+	line-height: 22px;
 }
 blockquote {
 	margin: 0 60px 12px 20px;
