@@ -4,7 +4,7 @@
 
 		$site_title			= 	'Molten Brew'				;
 		$site_tagline		= 	'Feed the caffeine monster within';
-		$posts_per_page		= 	5							;
+		$posts_per_page		= 	10							;
 		$theme				= 	'dfawlt'					;
 	
 	////////////////////////////////////////////////////////////////////////

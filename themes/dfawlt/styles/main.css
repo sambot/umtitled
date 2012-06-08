@@ -39,10 +39,10 @@ article ul {
 article ol {
 	list-style: decimal;
 }
-article > p > a {
+article > p > a, article li a, article em a, article strong a, article strong em a {
 	border-bottom: 1px dotted #0f2b6d;
 }
-article p a:hover {
+article p a:hover, article li a:hover {
 	border-bottom: 2px solid;
 	color: #0f2b6d;
 }
