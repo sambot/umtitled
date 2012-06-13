@@ -9,6 +9,8 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:300,700,900' rel='stylesheet'>
 <link rel="stylesheet" href="themes/<?php echo($theme); ?>/styles/main.css">
 <link rel="alternate" type="application/rss+xml" title="<?php echo ($site_title.' | '.$site_tagline); ?>" href="<?php echo ($site_root.'feed'); ?>" />
+<link rel="apple-touch-icon" href="themes/<?php echo($theme); ?>/images/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="themes/<?php echo($theme); ?>/images/favicon.png">
 </head>
 <body>
 
