@@ -23,8 +23,9 @@
 	
 	// 	ENHANCEMENT VARIABLES - Go ahead and edit away!
 
+		$twitter_comments	= 	true						;
 		$comments			= 	false						;
-		$disqus_shortname	= 	'umtitled'					;
+		$disqus_shortname	= 	'moltenbrew'				;
 		$ggl_analytics_id	= 	'UA-24892776-1'				;
 	
 	////////////////////////////////////////////////////////////////////////

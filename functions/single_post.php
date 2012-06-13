@@ -49,8 +49,14 @@
 		if (is_numeric(substr($this_post_date,0,1))) {
 		
 			post_date($filepath);
+
+			if ($GLOBALS['twitter_comments']) {
+				$tweet_this = ' &nbsp; | &nbsp; Comment on <a href="https://twitter.com/intent/tweet?text='.$GLOBALS['current_url'].'%20@moltenbrew" target="_blank">Twitter &rarr;</a>';
+			} else {
+				$tweet_this = '';
+			}
 			
-			echo ('<footer><p>Posted on '.$GLOBALS['post_date'].'</p></footer>');
+			echo ('<footer><p>Posted on '.$GLOBALS['post_date'].$tweet_this.'</p></footer>');
 			
 			$is_post = true;
 			
@@ -62,6 +68,7 @@
 		
 		echo ('</article>');
 		
+		// CONSIDER KILLING THIS
 		if ($GLOBALS['comments'] && $is_post) {
 			?>
 			
@@ -79,7 +86,6 @@
 				    })();
 				</script>
 				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-				<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 			
 			<?php
 		}	

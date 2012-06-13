@@ -248,7 +248,36 @@ footer .no_wrap {
 	white-space: nowrap;
 }
 
-
-
-
+/* DISQUS */
+#dsq-sort-by, #dsq-pagination, .dsq-trackback-url, #dsq-global-toolbar, .dsq-comment-flag, .dsq-comment-actions li:first-child  {
+	display: none;
+}
+#disqus_thread {
+	margin: 0 0 60px 0 !important;
+}
+.dsq-textarea-background, .dsq-button, #dsq-content .dsq-avatar img {
+	border-radius: 0 !important;
+	box-shadow: 0 0 0 !important;
+}
+#dsq-content h3, #dsq-account-dropdown a, .dsq-comment-meta a, .dsq-comment-actions a, .dsq-comment-header {
+	font-family: 'Lato', sans-serif;
+	color: #0f2b6d;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+#dsq-content .dsq-comment-text p {
+	font-size: 14px;
+	line-height: 20px;
+}
+.dsq-comment-header {
+	background: none !important;
+	border: none !important;
+	padding: 0 !important;
+}
+.dsq-commenter-name {
+	font-weight: 300 !important;
+}
+.dsq-comment-message {
+	margin: 0;
+}
 
