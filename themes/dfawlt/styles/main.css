@@ -249,7 +249,7 @@ footer .no_wrap {
 }
 
 /* DISQUS */
-#dsq-sort-by, #dsq-pagination, .dsq-trackback-url, #dsq-global-toolbar, .dsq-comment-flag, .dsq-comment-actions li:first-child  {
+/* #dsq-sort-by, #dsq-pagination, .dsq-trackback-url, #dsq-global-toolbar, .dsq-comment-flag, .dsq-comment-actions li:first-child  {
 	display: none;
 }
 #disqus_thread {
@@ -279,5 +279,5 @@ footer .no_wrap {
 }
 .dsq-comment-message {
 	margin: 0;
-}
+} */
 
