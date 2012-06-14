@@ -13,30 +13,30 @@
 <link rel="icon" type="image/png" href="themes/<?php echo($theme); ?>/images/favicon.png">
 </head>
 <body>
-
-	<div id="wrapper">
-		<header>
+	<div id="container">
+		<div id="wrapper">
+			<header>
+				
+				<nav>
+					<ul>
+						<?php nav(); ?>
+						<li id="search">
+							<input placeholder="Search" type="text" id="q" onkeydown="if (event.keyCode == 13) { googlesearch(); }">
+							<a href="#!" onclick="googlesearch();">Go</a>
+						</li>
+					</ul>
+				</nav>
+				<script type="text/javascript">
+				    function googlesearch() {
+				    	var searchterm = document.getElementById('q').value;
+				    	var searchurl = 'https://www.google.com/search?q=site:<?php echo $site_root; ?>+' + searchterm;
+				    	window.location = searchurl;
+				    }
+				</script>
+				<hgroup>
+					<h1><a href="<?php echo ($site_root); ?>"><?php echo($site_title); ?></a></h1>
+				</hgroup>
+			</header>
 			
-			<nav>
-				<ul>
-					<?php nav(); ?>
-					<li id="search">
-						<input placeholder="Search" type="text" id="q" onkeydown="if (event.keyCode == 13) { googlesearch(); }">
-						<a href="#!" onclick="googlesearch();">Go</a>
-					</li>
-				</ul>
-			</nav>
-			<script type="text/javascript">
-			    function googlesearch() {
-			    	var searchterm = document.getElementById('q').value;
-			    	var searchurl = 'https://www.google.com/search?q=site:<?php echo $site_root; ?>+' + searchterm;
-			    	window.location = searchurl;
-			    }
-			</script>
-			<hgroup>
-				<h1><a href="<?php echo ($site_root); ?>"><?php echo($site_title); ?></a></h1>
-			</hgroup>
-		</header>
-		
-		
 			
+				

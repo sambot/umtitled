@@ -2,7 +2,7 @@ body {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 16px;
 	line-height: 24px;
-	background: url(../images/bg.gif) fixed #efefef;
+	background: #000;
 	border-top: 6px solid #0f2b6d;
 }
 strong, b {
@@ -17,6 +17,9 @@ a:link, a:visited, a:active {
 }
 a:hover {
 	color: #000;
+}
+#container {
+	background: url(../images/bg.gif) fixed #efefef;
 }
 #wrapper {
 	width: 600px;

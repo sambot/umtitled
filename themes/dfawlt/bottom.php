@@ -1,16 +1,17 @@
 
-	</div>
-	
-	<footer>
-		<p><?php echo($footer); ?></p>
-		
-		<div id="credits">
-		
-			<p id="copyright">&copy; <?php echo(date("Y").' '.$site_title); ?></p>
-			<p id="um_link">Powered by <a href="http://umtitled.org/">Umtitled</a></p>
-			
 		</div>
-	</footer>
+		
+		<footer>
+			<p><?php echo($footer); ?></p>
+			
+			<div id="credits">
+			
+				<p id="copyright">&copy; <?php echo(date("Y").' '.$site_title); ?></p>
+				<p id="um_link">Powered by <a href="http://umtitled.org/">Umtitled</a></p>
+				
+			</div>
+		</footer>
+	</div>	
 	
 	<?php  
 	
