@@ -4,7 +4,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=640" /> 
-<title><?php echo ($site_title.' | '.$site_tagline); ?></title>
+<?php  
+
+	if (isset($GLOBALS['post_title'])) {
+		$page_title = $site_title.' | '.$GLOBALS['post_title'];
+	} else {
+		$page_title = $site_title.' | '.$site_tagline;
+	}
+
+?>
+<title><?php echo ($page_title); ?></title>
 <link rel="stylesheet" href="themes/<?php echo($theme); ?>/styles/reset.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:300,700,900' rel='stylesheet'>
 <link rel="stylesheet" href="themes/<?php echo($theme); ?>/styles/main.css">

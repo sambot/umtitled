@@ -11,15 +11,24 @@
 		include_once('cache/begin_caching.php');
 	} 
 	
-	include_once('themes/'.$theme.'/top.php');
+	
 	
 	if (is_numeric($_SERVER['QUERY_STRING'])) {
+		include_once('themes/'.$theme.'/top.php');
 		more_posts();
-//	} elseif (ctype_alpha($_SERVER['QUERY_STRING'])) {
-//		page(); //this isn't going to work unless pages don't have any - in them.
 	} elseif ($_SERVER['QUERY_STRING']) {
-		single_post();
+
+		ob_start();
+			single_post();
+			$guts = ob_get_contents();
+		ob_end_clean();
+		
+		include_once('themes/'.$theme.'/top.php');
+		
+		echo $guts;	
+
 	} else {
+		include_once('themes/'.$theme.'/top.php');
 		main_page();
 	}
 	

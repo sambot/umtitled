@@ -36,6 +36,19 @@
 		echo ('<article>');
 		
 		$post_content = Markdown($post_content);
+
+		$post_html = str_get_html($post_content);
+
+		global $post_title;
+
+		foreach($post_html->find('h1') as $element) {
+			$post_title = $element->innertext;
+			break;
+		}
+
+
+
+
 		
 		images($post_content);
 		
@@ -49,6 +62,8 @@
 		if (is_numeric(substr($this_post_date,0,1))) {
 		
 			post_date($filepath);
+
+			current_url();
 
 			if ($GLOBALS['twitter_comments']) {
 				$tweet_this = ' &nbsp; | &nbsp; Comment on <a href="https://twitter.com/intent/tweet?text='.$GLOBALS['current_url'].'%20@moltenbrew" target="_blank">Twitter &rarr;</a>';
