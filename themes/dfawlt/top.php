@@ -7,7 +7,7 @@
 <?php  
 
 	if (isset($GLOBALS['post_title'])) {
-		$page_title = $site_title.' | '.$GLOBALS['post_title'];
+		$page_title = $GLOBALS['post_title'].' | '.$site_title;
 	} else {
 		$page_title = $site_title.' | '.$site_tagline;
 	}
