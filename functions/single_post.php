@@ -66,7 +66,7 @@
 			current_url();
 
 			if ($GLOBALS['twitter_comments']) {
-				$tweet_this = ' &nbsp; | &nbsp; Comment on <a href="https://twitter.com/intent/tweet?text='.$GLOBALS['current_url'].'%20@moltenbrew" target="_blank">Twitter &rarr;</a>';
+				$tweet_this = ' &nbsp; | &nbsp; Comment on <a href="https://twitter.com/intent/tweet?text='.rawurlencode($GLOBALS['post_title']).'%20'.$GLOBALS['current_url'].'%20@moltenbrew" target="_blank">Twitter &rarr;</a>';
 			} else {
 				$tweet_this = '';
 			}
