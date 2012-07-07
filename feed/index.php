@@ -49,7 +49,47 @@
 			$post_link = preg_replace('#'.$GLOBALS['dropbox_posts_dir'].'/[0-9-]*_([0-9a-z-]*)\.md#', '$1', $filepaths[$i]);
 			
 			$the_file = file_get_contents($filepaths[$i]);
+			
+			
 			$the_file = Markdown($the_file);
+			
+			
+			
+			
+			
+			// IMAGE LINK TO ABSOLUTE URL FIX
+			
+			// TRY THIS: http://stackoverflow.com/questions/10389153/regex-to-change-img-relative-urls-to-absolute/10389252#10389252
+			
+			$db_img_dir = str_replace('posts','post_images',$GLOBALS['dropbox_posts_dir']);
+			
+			$the_file = str_replace('<img src="', '<img src="'.$db_img_dir.'/', $the_file);
+			$the_file = str_replace($db_img_dir.'/http://', 'http://', $the_file);
+			
+				
+/*
+				if(strpos($the_file,'<img')){
+				
+					$html = str_get_html($the_file);
+					
+					foreach($html->find('img') as $element) {
+						$img_url = $element->src;
+						if (strpos($img_url, 'http://')) {} else {
+							$db_img_dir = str_replace('posts','post_images',$GLOBALS['dropbox_posts_dir']);
+							$abs_img_url = $db_img_dir.'/'.$img_url;
+							
+							$element = str_replace($img_url, $abs_img_url, $element);
+							
+						}  
+					}
+				}	
+*/
+				
+			// END FIX
+			
+			
+			
+			
 			
 			$matches = array();
 			preg_match('#<h1>(.*)</h1>.*#iU', $the_file, $matches);
