@@ -40,7 +40,7 @@
 		$publish_rss		= 	true						;
 		$cache_rss			= 	true						;
 		$items_in_feed		= 	10							;
-		$use_cache			=	false						;
+		$use_cache			=	true						;
 		$cache_lifespan		=	60							;
 		$cache_url_param	= 	'cache'						;
 		$cache_url_pass		= 	'ruleseverythingaroundme'	;

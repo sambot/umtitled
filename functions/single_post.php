@@ -71,7 +71,7 @@
 				$tweet_this = '';
 			}
 			
-			echo ('<footer><p>Posted on '.$GLOBALS['post_date'].$tweet_this.'</p></footer>');
+			echo ('<footer class="footer_single"><p>Posted on '.$GLOBALS['post_date'].$tweet_this.'</p></footer>');
 			
 			$is_post = true;
 			

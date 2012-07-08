@@ -1,0 +1,95 @@
+<!doctype html>	
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=640" /> 
+<title>Instapaper, Free App Pick of the Week at Starbucks | Molten Brew</title>
+<link rel="stylesheet" href="themes/dfawlt/styles/reset.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,700,900' rel='stylesheet'>
+<link rel="stylesheet" href="themes/dfawlt/styles/main.css">
+<link rel="alternate" type="application/rss+xml" title="Molten Brew | Feed the caffeine monster within" href="http://localhost:8888/feed" />
+<link rel="apple-touch-icon-precomposed" href="themes/dfawlt/images/apple-touch-icon-precomposed.png" />
+<link rel="icon" type="image/png" href="themes/dfawlt/images/favicon.png">
+</head>
+<body>
+	<div id="container">
+		<div id="wrapper">
+			<header>
+				
+				<nav>
+					<ul>
+						<li><a href="archive">Archive
+</a></li><li><a href="about">About
+</a></li><li><a href="contact">Contact
+</a></li><li><a href="elsewhere">Elsewhere
+</a></li>						<li id="search">
+							<input placeholder="Search" type="text" id="q" onkeydown="if (event.keyCode == 13) { googlesearch(); }">
+							<a href="#!" onclick="googlesearch();">Go</a>
+						</li>
+					</ul>
+				</nav>
+				<script type="text/javascript">
+				    function googlesearch() {
+				    	var searchterm = document.getElementById('q').value;
+				    	var searchurl = 'https://www.google.com/search?q=site:http://localhost:8888/+' + searchterm;
+				    	window.location = searchurl;
+				    }
+				</script>
+				<hgroup>
+					<h1><a href="http://localhost:8888/">Molten Brew</a></h1>
+				</hgroup>
+			</header>
+			
+			
+				
+<article>
+<h1>Instapaper, Free App Pick of the Week at Starbucks</h1>
+
+<p><img src="http://dl.dropbox.com/u/1276566/umtitled/post_images/instapaper.jpg" alt="Instapaper Starbucks App of the Week"></p>
+
+<p>This week, Starbucks is offering the excellent <a href="http://itunes.apple.com/us/app/instapaper/id288545208?mt=8%3FpartnerId%3D30">Instapaper</a> app (iPhone and iPad) as their <strong>free</strong> App Pick of the Week. </p>
+
+<p><em>What is Instapaper?</em> Well it's a "<em>simple tool to save web pages for reading later</em>":</p>
+
+<blockquote>
+  <p>We discover web content throughout the day, and sometimes, we don't have time to read long articles right when we find them. Instapaper allows you to easily save them for later, when you do have time, so you don't just forget about them or skim through them. <a href="http://www.instapaper.com/faq">&rarr;</a></p>
+</blockquote>
+
+<p>These days, Instapaper has some <a href="http://www.readability.com/">fierce</a> <a href="http://getpocket.com/">competition</a>. It was the first though, and still, arguably, the best. </p>
+
+<p>Anyway, I picked up an extra promo code (<em>cuz I'm just that kinda guy</em>). Get it while it's hot:</p>
+
+<p><img src="http://dl.dropbox.com/u/1276566/umtitled/post_images/instapaper_code.jpg" alt="Instapaper Starbucks Code"></p>
+
+<footer><p>Posted on June  5, 2012 at 10:56 AM &nbsp; | &nbsp; Comment on <a href="https://twitter.com/intent/tweet?text=Instapaper%2C%20Free%20App%20Pick%20of%20the%20Week%20at%20Starbucks%20http://localhost:8888/instapaper-free-starbucks%20@moltenbrew" target="_blank">Twitter &rarr;</a></p></footer></article>
+		</div>
+		
+		<footer>
+			<p>Molten Brew is the personal writing project of <a href="http://localhost:8888/about">Samuel H. Cohen</a> (self-proclaimed internet superstar) and is powered by <a href="http://umtitled.org/">Umtitled</a>, a hella simple<br />web publishing engine.</p>
+			
+			<div id="credits">
+			
+				<p id="copyright">&copy; 2012 Molten Brew</p>
+				<p id="um_link">Powered by <a href="http://umtitled.org/">Umtitled</a></p>
+				
+			</div>
+		</footer>
+	</div>	
+	
+				<script type="text/javascript">
+
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-24892776-1']);
+			  _gaq.push(['_trackPageview']);
+			
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+			
+			</script>
+	
+		
+</body>
+</html>
