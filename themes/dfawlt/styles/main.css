@@ -168,6 +168,9 @@ article footer {
 	border: none;
 	padding: 0;
 }
+article:nth-child(3) {
+	margin-top: -45px;
+}
 article p img, article > p > a > img {
 	background: #eee;
 	border: 1px solid #ccc;
