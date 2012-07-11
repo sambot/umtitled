@@ -26,6 +26,10 @@
 		include_once('themes/'.$theme.'/top.php');
 		
 		echo $guts;	
+		
+		if($_SERVER['QUERY_STRING'] == 'archive') {
+			include_once('archive.php');
+		}
 
 	} else {
 		include_once('themes/'.$theme.'/top.php');

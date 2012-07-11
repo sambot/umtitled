@@ -210,6 +210,13 @@ nav#older_newer li a:hover {
 nav#older_newer span {
 	font-size: 20px;
 }
+.archive footer {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+article.archive:last-child footer {
+	margin-bottom: 60px;
+}
 footer {
 	font-family: 'Lato', sans-serif;
 	border-top: 6px solid #0f2b6d;
