@@ -1,8 +1,4 @@
 <?php 
-
-	if ($GLOBALS['use_cache'] == true) {
-		include_once('cache/begin_caching.php');
-	} 
 	
 	filepaths();
 	remove_pages();
@@ -32,10 +28,6 @@
 			echo $post_footer;
 			echo '</article>';
 		}
-    }
-    	
-	if ($GLOBALS['use_cache'] == true) {
-		include_once('cache/end_caching.php');
-	}    
+    }  
     
 ?>
