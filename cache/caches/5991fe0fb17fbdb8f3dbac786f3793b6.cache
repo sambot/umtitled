@@ -1,0 +1,199 @@
+<!doctype html>	
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=640" /> 
+<title>Molten Brew | Feed the caffeine monster within</title>
+<link rel="stylesheet" href="themes/dfawlt/styles/reset.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,700,900' rel='stylesheet'>
+<link rel="stylesheet" href="themes/dfawlt/styles/main.css">
+<link rel="alternate" type="application/rss+xml" title="Molten Brew | Feed the caffeine monster within" href="http://localhost:8888/feed" />
+<link rel="apple-touch-icon-precomposed" href="themes/dfawlt/images/apple-touch-icon-precomposed.png" />
+<link rel="icon" type="image/png" href="themes/dfawlt/images/favicon.png">
+</head>
+<body>
+	<div id="container">
+		<div id="wrapper">
+			<header>
+				
+				<nav>
+					<ul>
+						<li><a href="archive">Archive</a></li><li><a href="about">About
+</a></li><li><a href="contact">Contact
+</a></li><li><a href="elsewhere">Elsewhere
+</a></li>						<li id="search">
+							<input placeholder="Search" type="text" id="q" onkeydown="if (event.keyCode == 13) { googlesearch(); }">
+							<a href="#!" onclick="googlesearch();">Go</a>
+						</li>
+					</ul>
+				</nav>
+				<script type="text/javascript">
+				    function googlesearch() {
+				    	var searchterm = document.getElementById('q').value;
+				    	var searchurl = 'https://www.google.com/search?q=site:http://localhost:8888/+' + searchterm;
+				    	window.location = searchurl;
+				    }
+				</script>
+				<hgroup>
+					<h1><a href="http://localhost:8888/">Molten Brew</a></h1>
+				</hgroup>
+			</header>
+			
+			
+				
+<article><h1><a href="okay-okay-okay">Okay okay okay okay okay okay okay. Okay?</a></h1>
+
+<p>So... I've been seeing other blog platforms. It's not that I'm unhappy with our relationship. No, it's more that... well our last big tiff spooked me. You<sup>1</sup> got all corrupted. I know; it was that pesky virus. But I saw a side of you that I didn't know was there. And I didn't like it. </p>
+
+<p>But I'm going to put all that behind us now. I'm coming back to you... to give this thing another try. Let's take it slow, okay? One post at a time.</p>
+
+<p>C'mere. Gimme a hug. I've missed you.</p>
+
+<hr><ol><li>I'm talking, of course, about <a href="http://umtitled.org/">Umtitled</a>, my hella simple web publishing engine.</li>
+</ol>
+<footer><p>Posted on October 12, 2012 at  6:23 PM</p></footer></article><article><h1><a href="document-ready">jQuery's $(document).ready() in Webkit</a></h1>
+
+<p>For whatever reason, jQuery's ubiquitous <code>$(document).ready()</code> function doesn't work the way one might expect it to in Webkit-based browsers (Safari, Chrome, etc...) where it seems to be firing prematurely<sup>1</sup>... so before the documents is actually <em>ready</em>. If you're having trouble, try using <code>$(window).load()</code> instead. Like so:</p>
+
+<pre><code>$(window).load(function(){
+    alert('Give to the gorilla girl.'); 
+});
+</code></pre>
+
+<p>The distinction betwixt the two is subtle, but the results are worlds apart.</p>
+
+<p><a href="http://4loc.wordpress.com/2009/04/28/documentready-vs-windowload/">$(document).ready vs. $(window).load | 4 Lines of Code &rarr;</a></p>
+
+<hr><ol><li>You know how that is, guys... right? Hello?</li>
+</ol>
+<footer><p>Posted on August  2, 2012 at 10:50 AM</p></footer></article><article><h1><a href="self-propagation">Self-propagation</a></h1>
+
+<p>After fighting (and losing) a battle with a self-propagating server virus, Molten Brew is back online. Did you miss me? I missed me.</p>
+<footer><p>Posted on July 29, 2012 at 10:30 PM</p></footer></article><article><h1><a href="rebutting-the-kerfuffle">Rebutting my solution to the Google kerfuffle</a></h1>
+
+<p>Earlier this year, Google had some trouble with privacy complaints... mostly regarding their use of cookies to track and understand an interneter's<sup>1</sup> movement across the web in order to more accurately target advertising. In response, <a href="http://moltenbrew.com/google-kerfuffle">I wrote</a>:</p>
+
+<blockquote>
+  <p>I've got a fix though. It's a really simple one. Google should charge for their services in exchange for:<br>
+  1. The ad-free use of their services.<br>
+  2. The assurance that you're not being tracked (by Google).</p>
+</blockquote>
+
+<h2>My rebuttal</h2>
+
+<p><em>You idiot!</em> If Google charged for their services they would be beholden to their now paying customers for things like support, bug fixes, down time, etc... As it stands now, Google can get away with whatever they damn well please because they ain't charging a dime for their services (like Gmail, Calendar, and Docs). If there's a known bug that randomly inserts the word "gonad" into all of your outgoing emails... well, you've just got to deal because they don't owe you anything.<sup>2</sup></p>
+
+<p>Having said that, I'm pretty sure that if there was a known bug that randomly inserts the word "gonad" into all of your outgoing emails, Google would do everything in its power to squash that bug as quickly as possible. Even though they don't owe you anything, it's still very much in their best interest to keep you as a happy <s>customer</s><sup>1</sup> user. Apparently, your eyeballs are worth a lot to those advertisers.</p>
+
+<hr><ol><li>In-ter-NET-er. <em>n.</em> 1. One who internets.</li>
+<li>"Customer" implies that some type of monetary payment has transacted.</li>
+</ol>
+<footer><p>Posted on July 17, 2012 at  9:10 AM</p></footer></article><article><h1><a href="html-to-markdown">There and back again<sup>1</sup></a></h1>
+
+<p>There was some good response to <a href="http://moltenbrew.com/markdown-in-textwrangler">the last post</a> (in which Markdown was introduced and we were shown how to install and process Markdown from within TextWrangler). So let's keep this Markdown train a'rollin' by discussing how to get back to Markdown from HTML.</p>
+
+<p>Conceptually speaking, the Markdown script simply takes a specially formatted text document (<em>that's the Markdown, duh!</em>) and converts it to HTML, right? So conceptually speaking, it should be possible to take HTML and convert it back to Markdown, right? Conceptually speaking, of course. This script, <a href="https://github.com/aaronsw/html2text">html2text</a> by <a href="http://www.aaronsw.com/">Aaron Swartz</a> does just that: it converts HTML to Markdown. And you install it in TextWrangler in the same way as we did with the Markdown script. Need a refresher?</p>
+
+<ol><li>First, download it: <a href="https://github.com/aaronsw/html2text/zipball/master">aaronsw-html2text.zip</a></li>
+<li>Then, unzip it.</li>
+<li>Next, take the file, html2text.py, and put it here: <code>/Users/YOU/Library/Application Support/TextWrangler/Unix Support/Unix Filters/</code> (replace YOU with the name of your OS X user account).</li>
+<li>Now slap some HTML into TextWrangler and, in the menubar, navigate to <code>#! &gt; Unix Filters &gt; html2text.py</code>. And behold! Your HTML becomes Markdown!</li>
+</ol><p>Brilliant, right? Now you can bounce from Markdown to HTML and then back to Markdown...</p>
+
+<p>Worth noting, the Markdown that you'll get from the html2text script has a specific formatting style associated with it. Some things are tabbed in, the links are at the bottom of the document, etc... No need to worry though, it's all valid Markdown.</p>
+
+<p>Also worth noting, the developer of html2text has added a few user modifiable parameters to the script (wasn't that nice of him?). If you crack it open in TextWrangler (or the plain text editor of your choice), you'll see the parameter settings start at around line 38. I'd suggest changing <code>BODY_WIDTH</code> to <code>0</code> to disable hard wrapping long lines at a set character position (this setting can be found on line 45).</p>
+
+<hr><ol><li>Boilerplate: this post first appeared on a blog called Pennywised... don't look for it, it's long gone. I wrote it and I still consider it a valuable piece, so I think it's worth republishing.</li>
+</ol>
+<footer><p>Posted on July 15, 2012 at  6:44 PM</p></footer></article><article><h1><a href="markdown-in-textwrangler">Markdown in TextWrangler... it's not just for neck-beards anymore<sup>1</sup></a></h1>
+
+<p>While largely undocumented, one of my favorite free text editors, <a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a>, can process Markdown files (turn 'em into HTML, that is) just as well as any of the big boys. Unfortunately, it's rather tricky to get Markdown up and running in TextWrangler. Thankfully, you've got me looking out for you. So here's how to do it...</p>
+
+<p>The trick here has to do with TextWrangler's big brother, <a href="http://www.barebones.com/products/bbedit/">BBEdit</a>. The two apps share a lot of the same DNA, so the steps to install Markdown in TextWrangler are quite similar to that of BBEdit... hang on a sec... Are you telling me that you don't write in Markdown? Whoa, you don't even know what Markdown is?! Okay. Let's all calm down now. No need to get upset. Everyone starts life as a noob. Let's take a few steps back and talk a bit about Markdown.</p>
+
+<p><a href="http://daringfireball.net/projects/markdown/">Markdown</a> is a formatting language for web writers constructed some years ago by the legendary and highly attractive Apple blogger, <a href="http://daringfireball.net/colophon/">John Gruber</a> (of <a href="http://daringfireball.net/">Daring Fireball</a> fame). It was born from the frustrations of web writers whose final output needed to be HTML but who loathed the process of actually writing long-form content in the difficult-to-read and annoying-to-write HTML markup. Markdown allows the web writer to write in the plain text in their editor of choice, with visual formatting cues, while maintaining their document's readability. The end result is still HTML... but it's all about the journey, not the destination, right? So you get to that HTML by writing in a much more readable, plain text syntax; Markdown!</p>
+
+<p>The Markdown magic happens by way of a Perl script<sup>2</sup> that translates the Markdown into HTML. When you're done composing your Markdown file, you trigger the Markdown interpreter script. If everything goes as planned, you'll be left with valid HTML marked up as intended.</p>
+
+<p>So, in short, <strong>Markdown allows a web writer to write in a quicker, more efficient, and more readable syntax than that of HTML, but still produce HTML markup as the final output format.</strong> See? Everybody wins!</p>
+
+<p><em>So what does this Markdown thing looks like?</em> Daring Fireball has an excellent (one might even go so far as to say, definitive) <a href="http://daringfireball.net/projects/markdown/syntax">tour of the Markdown syntax</a>. I'd highly recommend giving it a once-over.</p>
+
+<p>Good? Good. Now where were we?</p>
+
+<p>...the trick here has to do with TextWrangler's big brother, BBEdit. The two apps share a lot of the same DNA, so the steps to install Markdown in TextWrangler are quite similar to that of BBEdit:</p>
+
+<ol><li>Grab a copy of Markdown from Daring Fireball:<br><a href="http://daringfireball.net/projects/downloads/Markdown_1.0.1.zip">Markdown_1.0.1.zip</a></li>
+<li>Unzip the package and you'll find a few files. The one that you are looking for is Markdown.pl.</li>
+<li>Move Markdown.pl to <code>/Users/YOU/Library/Application Support/TextWrangler/Unix Support/Unix Filters/</code> (replace YOU with the name of your OS X user account).</li>
+<li>Now fire up TextWrangler, type some Markdown, and in the menubar navigate to <code>#! &gt; Unix Filters &gt; Markdown.pl</code>. </li>
+<li>TextWrangler converts the Markdown to HTML  right before your eyes! Wowza! If something goes horribly wrong, there's no need to worry. Just <code>Command + Z</code> to undo and you're back to where you started. But if you've written good, clean Markdown, there's nothing to fear.</li>
+</ol><p>Worth noting, TextWrangler natively understand the Markdown syntax, so you'll get syntax highlighting and code folding straight outta the box... just be sure to give your files the .markdown extension (.mdown and .md might work too), or deliberately tell TextWrangler to render your file as Markdown.</p>
+
+<p>And there you have it. Markdown in TextWrangler... it's not just for neck-beards anymore... whatever that means.</p>
+
+<hr><ol><li>This post first appeared on a blog called Pennywised.com... don't look for it, it's long gone. I wrote it and still consider it a valuable piece, so I think it's worth republishing.</li>
+<li>There's also an <a href="http://michelf.ca/projects/php-markdown/">unofficial PHP port of the Markdown script</a>. I can confirm that it works very well as it's one of the core components of <a href="http://umtitled.org">Umtitled</a>... the publishing engine that's powering this very blog.</li>
+</ol>
+<footer><p>Posted on July 15, 2012 at  2:21 PM</p></footer></article><article><h1><a href="markdown-asterisks-underscores">Markdown: underscores and asterisks should not carry the same meaning</a></h1>
+
+<p>I totally agree with <a href="http://www.merlinmann.com/">Merlin Mann</a>'s complaint/suggestion/plea to <a href="http://daringfireball.net/colophon/">John Gruber</a>, creator of <a href="http://daringfireball.net/projects/markdown/">Markdown</a>, during the end of <a href="http://muleradio.net/thetalkshow/">The Talk Show</a>, <a href="http://muleradio.net/thetalkshow/8/">episode 8</a>. Simply put, Merlin states that single underscores should translate to <em>italics</em> and single asterisks, <strong>bold</strong><sup>1</sup>. Plus one to that.</p>
+
+<p>It's all about Markdown's very readable syntax. _Underscores_ imply emphasis but maintain a thin appearance, like italics. *Asterisks* are heavier in their emphasis and visual weight, like bold. To me, it just feels more natural this way.</p>
+
+<hr><ol><li>Single underscores already translate to italics... as do single asterisks. See? That's the problem. The Markdown syntax treats underscores and asterisks similarly. <em>_This_</em> is the same as <em>*this*</em> and <strong>__this__</strong> is the same as <strong>**this**</strong>. Wouldn't it be cleaner if _this_ meant italics and *this* meant bold?</li>
+</ol>
+<footer><p>Posted on July  8, 2012 at  9:04 PM</p></footer></article><article><h1><a href="debug">Debug.</a></h1>
+
+<p>I finally fixed the RSS image bug in my <a href="http://umtitled.org">home-brew CMS</a>. Behold: now when I post a locally (Dropbox) stored image...</p>
+
+<p><img src="http://dl.dropbox.com/u/1276566/umtitled/post_images/swamp_dog.jpg" alt="Swamp dog"></p>
+
+<p>...and a remote image...</p>
+
+<p><a href="http://traduzioniegiappone.wordpress.com/2012/04/17/il-giapponese-e-i-gatti/" class="img_link"><img src="http://traduzioniegiappone.files.wordpress.com/2012/04/gatto-che-gioca.jpg" alt="Kitten with a laptop"></a></p>
+
+<p>...they will both be displayed successfully in the <a href="/feed">RSS feed</a>. </p>
+
+<p>You're welcome.</p>
+<footer><p>Posted on July  6, 2012 at  9:56 PM</p></footer></article><article><h1><a href="nexus-7">Mom, dad, I think I'm bi...</a></h1>
+
+<p>If not fully bi, I'm definitely Android curious. I really do love my iPad, but I don't know... that Nexus 7 is darn sexy.</p>
+
+<p><a href="http://www.google.com/nexus/#/7">Nexus 7 - The new Android tablet from Google &rarr;</a></p>
+<footer><p>Posted on July  1, 2012 at  3:16 PM</p></footer></article><article><h1><a href="nexus-q">The only thing I'm going to say about the Nexus Q is...</a></h1>
+
+<p>"That's no moon... it's a space station."</p>
+<footer><p>Posted on June 27, 2012 at 10:31 PM</p></footer></article><nav id="older_newer"><ul><li><a href="2"><span>&laquo;</span> Older</a></li></ul></nav>
+		</div>
+		
+		<footer>
+			<p>Molten Brew is the personal writing project of <a href="http://localhost:8888/about">Samuel H. Cohen</a> (self-proclaimed internet superstar) and is powered by <a href="http://umtitled.org/">Umtitled</a>, a hella simple<br />web publishing engine.</p>
+			
+			<div id="credits">
+			
+				<p id="copyright">&copy; 2012 Molten Brew</p>
+				<p id="um_link">Powered by <a href="http://umtitled.org/">Umtitled</a></p>
+				
+			</div>
+		</footer>
+	</div>	
+	
+				<script type="text/javascript">
+
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-24892776-1']);
+			  _gaq.push(['_trackPageview']);
+			
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+			
+			</script>
+	
+		
+</body>
+</html>

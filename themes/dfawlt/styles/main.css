@@ -4,6 +4,7 @@ body {
 	line-height: 24px;
 	background: #000;
 	border-top: 6px solid #0f2b6d;
+	-webkit-text-size-adjust: 100%;
 }
 strong, b {
 	font-weight: bold;
@@ -24,6 +25,9 @@ a:hover {
 #wrapper {
 	width: 600px;
 	margin: auto;
+}
+article {
+	-webkit-text-size-adjust: 160%;
 }
 article p, article ul, article ol, pre {
 	margin-bottom: 14px;

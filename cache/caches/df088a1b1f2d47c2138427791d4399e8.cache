@@ -1,0 +1,85 @@
+<!doctype html>	
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=640" /> 
+<title>Okay okay okay okay okay okay okay. Okay? | Molten Brew</title>
+<link rel="stylesheet" href="themes/dfawlt/styles/reset.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,700,900' rel='stylesheet'>
+<link rel="stylesheet" href="themes/dfawlt/styles/main.css">
+<link rel="alternate" type="application/rss+xml" title="Molten Brew | Feed the caffeine monster within" href="http://localhost:8888/feed" />
+<link rel="apple-touch-icon-precomposed" href="themes/dfawlt/images/apple-touch-icon-precomposed.png" />
+<link rel="icon" type="image/png" href="themes/dfawlt/images/favicon.png">
+</head>
+<body>
+	<div id="container">
+		<div id="wrapper">
+			<header>
+				
+				<nav>
+					<ul>
+						<li><a href="archive">Archive</a></li><li><a href="about">About
+</a></li><li><a href="contact">Contact
+</a></li><li><a href="elsewhere">Elsewhere
+</a></li>						<li id="search">
+							<input placeholder="Search" type="text" id="q" onkeydown="if (event.keyCode == 13) { googlesearch(); }">
+							<a href="#!" onclick="googlesearch();">Go</a>
+						</li>
+					</ul>
+				</nav>
+				<script type="text/javascript">
+				    function googlesearch() {
+				    	var searchterm = document.getElementById('q').value;
+				    	var searchurl = 'https://www.google.com/search?q=site:http://localhost:8888/+' + searchterm;
+				    	window.location = searchurl;
+				    }
+				</script>
+				<hgroup>
+					<h1><a href="http://localhost:8888/">Molten Brew</a></h1>
+				</hgroup>
+			</header>
+			
+			
+				
+<article><h1>Okay okay okay okay okay okay okay. Okay?</h1>
+
+<p>So... I've been seeing other blog platforms. It's not that I'm unhappy with our relationship. No, it's more that... well our last big tiff spooked me. You<sup>1</sup> got all corrupted. I know; it was that pesky virus. But I saw a side of you that I didn't know was there. And I didn't like it. </p>
+
+<p>But I'm going to put all that behind us now. I'm coming back to you... to give this thing another try. Let's take it slow, okay? One post at a time.</p>
+
+<p>C'mere. Gimme a hug. I've missed you.</p>
+
+<hr><ol><li>I'm talking, of course, about <a href="http://umtitled.org/">Umtitled</a>, my hella simple web publishing engine.</li>
+</ol>
+<footer class="footer_single"><p>Posted on October 12, 2012 at  6:23 PM &nbsp; | &nbsp; Comment on <a href="https://twitter.com/intent/tweet?text=Okay%20okay%20okay%20okay%20okay%20okay%20okay.%20Okay%3F%20http://localhost:8888/okay-okay-okay%20@moltenbrew" target="_blank">Twitter &rarr;</a></p></footer></article>
+		</div>
+		
+		<footer>
+			<p>Molten Brew is the personal writing project of <a href="http://localhost:8888/about">Samuel H. Cohen</a> (self-proclaimed internet superstar) and is powered by <a href="http://umtitled.org/">Umtitled</a>, a hella simple<br />web publishing engine.</p>
+			
+			<div id="credits">
+			
+				<p id="copyright">&copy; 2012 Molten Brew</p>
+				<p id="um_link">Powered by <a href="http://umtitled.org/">Umtitled</a></p>
+				
+			</div>
+		</footer>
+	</div>	
+	
+				<script type="text/javascript">
+
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-24892776-1']);
+			  _gaq.push(['_trackPageview']);
+			
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+			
+			</script>
+	
+		
+</body>
+</html>

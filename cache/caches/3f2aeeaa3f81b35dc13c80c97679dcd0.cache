@@ -1,0 +1,92 @@
+<!doctype html>	
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=640" /> 
+<title>About | Molten Brew</title>
+<link rel="stylesheet" href="themes/dfawlt/styles/reset.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,700,900' rel='stylesheet'>
+<link rel="stylesheet" href="themes/dfawlt/styles/main.css">
+<link rel="alternate" type="application/rss+xml" title="Molten Brew | Feed the caffeine monster within" href="http://localhost:8888/feed" />
+<link rel="apple-touch-icon-precomposed" href="themes/dfawlt/images/apple-touch-icon-precomposed.png" />
+<link rel="icon" type="image/png" href="themes/dfawlt/images/favicon.png">
+</head>
+<body>
+	<div id="container">
+		<div id="wrapper">
+			<header>
+				
+				<nav>
+					<ul>
+						<li><a href="archive">Archive</a></li><li><a href="about" class="active_nav">About
+</a></li><li><a href="contact">Contact
+</a></li><li><a href="elsewhere">Elsewhere
+</a></li>						<li id="search">
+							<input placeholder="Search" type="text" id="q" onkeydown="if (event.keyCode == 13) { googlesearch(); }">
+							<a href="#!" onclick="googlesearch();">Go</a>
+						</li>
+					</ul>
+				</nav>
+				<script type="text/javascript">
+				    function googlesearch() {
+				    	var searchterm = document.getElementById('q').value;
+				    	var searchurl = 'https://www.google.com/search?q=site:http://localhost:8888/+' + searchterm;
+				    	window.location = searchurl;
+				    }
+				</script>
+				<hgroup>
+					<h1><a href="http://localhost:8888/">Molten Brew</a></h1>
+				</hgroup>
+			</header>
+			
+			
+				
+<article><h1>About</h1>
+
+<h2>Molten Brew is...</h2>
+
+<p>...the personal writing project of Samuel H. Cohen (self-proclaimed internet superstar) and is powered by <a href="http://umtitled.org">Umtitled</a> (a hella simple web publishing engine).</p>
+
+<h2>Samuel H. Cohen is...</h2>
+
+<p><img src="http://dl.dropbox.com/u/1276566/umtitled/post_images/me_coffee.jpg" alt="Yep, that's me."></p>
+
+<blockquote>
+  <p>"...an amazing and humble guy. Once, he rushed into a burning building, up six flights of stairs to save a kitten from certain death. He speaks eight languages, has mastered three varieties of martial arts, is a wine expert, and is a pulitzer prize winning author. Sam is an international heart-throb who prefers a quiet evening at home knitting afghans for the homeless, to the go-go, glitz and glamor of the party scene. I think the day he won the silver medal for ballroom dancing at the '98 olympics was the happiest of his life. Pretty impressive for a guy who never finished the 8th grade." &mdash; <em>Carrie Reynolds, 2008</em></p>
+</blockquote>
+
+<p>Actually, none of that is true. I'm just a designer, developer, and instructor doing my part to make this great big internet of ours a better place.</p>
+
+<p><a href="http://sa.muel.co/hen/">More &rarr;</a></p>
+<footer></footer></article>
+		</div>
+		
+		<footer>
+			<p>Molten Brew is the personal writing project of <a href="http://localhost:8888/about">Samuel H. Cohen</a> (self-proclaimed internet superstar) and is powered by <a href="http://umtitled.org/">Umtitled</a>, a hella simple<br />web publishing engine.</p>
+			
+			<div id="credits">
+			
+				<p id="copyright">&copy; 2012 Molten Brew</p>
+				<p id="um_link">Powered by <a href="http://umtitled.org/">Umtitled</a></p>
+				
+			</div>
+		</footer>
+	</div>	
+	
+				<script type="text/javascript">
+
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-24892776-1']);
+			  _gaq.push(['_trackPageview']);
+			
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+			
+			</script>
+	
+		
+</body>
+</html>
