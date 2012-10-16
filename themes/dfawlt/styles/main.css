@@ -27,8 +27,8 @@ a:hover {
 	margin: auto;
 }
 article {
-	-webkit-text-size-adjust: 160%;
-}
+/*	-webkit-text-size-adjust: 160%;
+*/}
 article p, article ul, article ol, pre {
 	margin-bottom: 14px;
 	line-height: 26px;
@@ -268,6 +268,54 @@ footer .no_wrap {
 .footer_single {
 	margin-bottom: 60px;
 }
+
+/* HERE COME THE QUERIES */
+
+
+/* iphone portrait */
+@media screen and (device-width: 320px) and (device-height: 480px) and (orientation: portrait) {
+	article {
+		 -webkit-text-size-adjust: 180%;
+	}
+}
+
+/* iphone landscape */
+@media screen and (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
+	article {
+		 -webkit-text-size-adjust: 120%;
+	}
+}
+
+/* ipad portrait */
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+	article {
+		 -webkit-text-size-adjust: 90%;
+	}
+	#container {
+		width: 768px;
+	}
+	#wrapper {
+		width: 520px;
+	}
+}
+
+/* ipad landscape */
+@media screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+	article {
+		 -webkit-text-size-adjust: 100%;
+	}
+	#container {
+		width: 1024px;
+	}
+	#wrapper {
+		width: 640px;
+	}
+}
+	
+
+
+
+
 
 /* DISQUS */
 /* #dsq-sort-by, #dsq-pagination, .dsq-trackback-url, #dsq-global-toolbar, .dsq-comment-flag, .dsq-comment-actions li:first-child  {

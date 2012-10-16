@@ -53,7 +53,7 @@
 </ol>
 <footer><p>Posted on October 12, 2012 at  6:23 PM</p></footer></article><article><h1><a href="document-ready">jQuery's $(document).ready() in Webkit</a></h1>
 
-<p>For whatever reason, jQuery's ubiquitous <code>$(document).ready()</code> function doesn't work the way one might expect it to in Webkit-based browsers (Safari, Chrome, etc...) where it seems to be firing prematurely<sup>1</sup>... so before the documents is actually <em>ready</em>. If you're having trouble, try using <code>$(window).load()</code> instead. Like so:</p>
+<p>For whatever reason, jQuery's ubiquitous <code>$(document).ready()</code> function doesn't work the way one might expect it to in Webkit-based browsers (Safari, Chrome, etc...) where it seems to be firing prematurely<sup>1</sup>... so before the document is actually <em>ready</em>. If you're having trouble, try using <code>$(window).load()</code> instead. Like so:</p>
 
 <pre><code>$(window).load(function(){
     alert('Give to the gorilla girl.'); 
